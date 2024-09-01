@@ -52,48 +52,16 @@
   flex-basis: calc((100% - 24px * 3) / 4);
 }
 
-.features-item::before {
-  content: "";
-  display: block;
+.features-icon-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 112px;
   margin-bottom: 8px;
 
   border-radius: 4px;
   border: 1px solid var(--border-slate-color);
   background-color: var(--secondary-bg-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 64px 64px;
-}
-
-/* .features-item:nth-child(1)::before {
-  background-image: url("../imgs/icons/antenna.svg");
-}
-.features-item:nth-child(2)::before {
-  background-image: url("../imgs/icons/clock.svg");
-}
-.features-item:nth-child(3)::before {
-  background-image: url("../imgs/icons/diagram.svg");
-}
-.features-item:nth-child(4)::before {
-  background-image: url("../imgs/icons/astronaut.svg");
-} */
-/* Цей підхід має мінус у випадку коли зміниться порядок 
-карток в HTML - доведеться і в CSS змінити порядок. 
-Тому краще реалізувати додавання зображень 
-через додаткові класи */
-
-.features-icon-antenna::before {
-  background-image: url("../imgs/icons/antenna.svg");
-}
-.features-icon-clock::before {
-  background-image: url("../imgs/icons/clock.svg");
-}
-.features-icon-diagram::before {
-  background-image: url("../imgs/icons/diagram.svg");
-}
-.features-icon-astronaut::before {
-  background-image: url("../imgs/icons/astronaut.svg");
 }
 
 /* /features-section */
