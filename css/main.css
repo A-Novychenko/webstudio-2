@@ -1,0 +1,157 @@
+/* hero-section */
+
+.hero-section {
+  max-width: 1440px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+
+  text-align: center;
+
+  background-color: var(--dark-bg-color);
+  background-image: linear-gradient(
+      to right,
+      var(--overlay-color),
+      var(--overlay-color)
+    ),
+    url("../imgs/bg-imgs/hero.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.main-title {
+  margin-bottom: 48px;
+
+  color: var(--light-text-color);
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+}
+
+/* /hero-section */
+
+/* features-section */
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.features-item {
+  flex-basis: calc((100% - 24px * 3) / 4);
+}
+
+.features-item::before {
+  content: "";
+  display: block;
+  height: 112px;
+  margin-bottom: 8px;
+
+  border-radius: 4px;
+  border: 1px solid var(--border-slate-color);
+  background-color: var(--secondary-bg-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px 64px;
+}
+
+/* .features-item:nth-child(1)::before {
+  background-image: url("../imgs/icons/antenna.svg");
+}
+.features-item:nth-child(2)::before {
+  background-image: url("../imgs/icons/clock.svg");
+}
+.features-item:nth-child(3)::before {
+  background-image: url("../imgs/icons/diagram.svg");
+}
+.features-item:nth-child(4)::before {
+  background-image: url("../imgs/icons/astronaut.svg");
+} */
+/* Цей підхід має мінус у випадку коли зміниться порядок 
+карток в HTML - доведеться і в CSS змінити порядок. 
+Тому краще реалізувати додавання зображень 
+через додаткові класи */
+
+.features-icon-antenna::before {
+  background-image: url("../imgs/icons/antenna.svg");
+}
+.features-icon-clock::before {
+  background-image: url("../imgs/icons/clock.svg");
+}
+.features-icon-diagram::before {
+  background-image: url("../imgs/icons/diagram.svg");
+}
+.features-icon-astronaut::before {
+  background-image: url("../imgs/icons/astronaut.svg");
+}
+
+/* /features-section */
+
+/* team-section */
+
+.team-section {
+  background-color: var(--secondary-bg-color);
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  text-align: center;
+}
+
+.team-item {
+  flex-basis: calc((100% - 24px * 3) / 4);
+  background-color: var(--primary-bg-color);
+  border-radius: 4px;
+
+  overflow: hidden;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
+
+.team-item:hover .social-link {
+  background-color: var(--accent-color-dark);
+}
+
+.team-text-box {
+  padding: 32px 16px;
+}
+
+.team-role {
+  margin-bottom: 8px;
+}
+
+/* /team-section */
+
+/* portfolio-section */
+.portfolio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-card {
+  flex-basis: calc((100% - (24px * 2)) / 3);
+}
+
+.portfolio-text-box {
+  padding: 32px 16px;
+  border: 1px solid var(--border-light-color);
+  border-top: none;
+}
+/* /portfolio-section */
