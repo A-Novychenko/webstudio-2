@@ -95,6 +95,11 @@
   background-color: var(--accent-color-dark);
 }
 
+.team-item img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .team-text-box {
   padding: 32px 16px;
 }
