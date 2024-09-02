@@ -15,7 +15,7 @@
       var(--overlay-color),
       var(--overlay-color)
     ),
-    url("../imgs/bg-imgs/hero.webp");
+    url("../imgs/bg-imgs/hero-banner.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
