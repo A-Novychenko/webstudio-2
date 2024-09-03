@@ -82,10 +82,10 @@
 
 .team-item {
   flex-basis: calc((100% - 24px * 3) / 4);
-  background-color: var(--primary-bg-color);
   border-radius: 4px;
 
   overflow: hidden;
+  background-color: var(--primary-bg-color);
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
@@ -124,6 +124,7 @@
 
 .portfolio-text-box {
   padding: 32px 16px;
+
   border: 1px solid var(--border-light-color);
   border-top: none;
 }
