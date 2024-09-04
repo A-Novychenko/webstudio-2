@@ -7,6 +7,8 @@
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #f4f4fd;
   --dark-bg-color: #2e2f42;
+  --backdrop-bg: rgba(46, 47, 66, 0.4);
+  --modal-bg: #fcfcfc;
 
   --accent-color: #4d5ae5;
   --accent-color-dark: #404bbf;
@@ -192,6 +194,24 @@ main {
   margin-left: 76px;
 }
 
+.current {
+  position: relative;
+}
+
+.current::before {
+  position: absolute;
+  top: calc(100% - 3px);
+  left: 0;
+
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+
+  background-color: var(--accent-color-dark);
+  border-radius: 2px;
+}
+
 .site-nav .link.current {
   color: var(--accent-color-dark);
 }
@@ -283,3 +303,60 @@ main {
 }
 
 /* /social */
+
+/* backdrop and modal*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: var(--backdrop-bg);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 408px;
+  min-height: 584px;
+
+  background-color: var(--modal-bg);
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+}
+
+.close-modal-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  display: block;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+
+  line-height: 0;
+
+  border: 1px solid var(--border-light-color);
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.close-modal-btn:hover,
+.close-modal-btn:focus {
+  border-color: transparent;
+  background-color: var(--accent-color-dark);
+  fill: var(--light-text-color);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+/* /backdrop and modal*/
