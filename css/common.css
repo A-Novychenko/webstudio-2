@@ -116,7 +116,7 @@ main {
   letter-spacing: 0.72px;
 }
 
-.suptitle {
+.subtitle {
   margin-bottom: 8px;
 
   color: var(--secondary-text-color);
@@ -240,7 +240,7 @@ main {
   font-weight: 400;
 }
 
-.footer-suptitle {
+.footer-subtitle {
   margin-bottom: 16px;
 
   color: var(--primary-bg-color);
