@@ -19,7 +19,7 @@
 
   --overlay-color: rgba(46, 47, 66, 0.7);
 
-  --animation: all 0.3s linear;
+  --animation: 300ms ease-in-out;
 }
 
 html {
@@ -156,6 +156,8 @@ main {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+
+  transition: background-color var(--animation);
 }
 
 .button:hover,
@@ -198,7 +200,7 @@ main {
   position: relative;
 }
 
-.current::before {
+.current::after {
   position: absolute;
   top: calc(100% - 3px);
   left: 0;
@@ -212,12 +214,16 @@ main {
   border-radius: 2px;
 }
 
-.site-nav .link.current {
+.nav-link {
+  transition: color var(--animation);
+}
+
+.nav-link:hover,
+.nav-link:focus {
   color: var(--accent-color-dark);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.nav-link.current {
   color: var(--accent-color-dark);
 }
 
@@ -226,6 +232,10 @@ main {
   align-items: center;
   margin-left: auto;
   column-gap: 40px;
+}
+
+.contacts-link {
+  transition: color var(--animation);
 }
 
 .contacts-link:hover,
@@ -291,6 +301,8 @@ main {
 
   border-radius: 50%;
   background-color: var(--accent-color);
+
+  transition: background-color var(--animation);
 }
 
 .social-links a.social-link:hover,
@@ -314,6 +326,12 @@ main {
   height: 100%;
 
   background: var(--backdrop-bg);
+
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+  transition: transform var(--animation), visibility var(--animation),
+    opacity var(--animation);
 }
 
 .modal {
@@ -346,6 +364,9 @@ main {
   border: 1px solid var(--border-light-color);
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.1);
+
+  transition: border-color var(--animation), background-color var(--animation),
+    fill var(--animation);
 }
 
 .close-modal-btn:hover,
@@ -356,7 +377,9 @@ main {
 }
 
 .is-hidden {
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transform: scale(1.15);
 }
 /* /backdrop and modal*/
