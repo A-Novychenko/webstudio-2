@@ -147,10 +147,11 @@ main {
 
 .button {
   padding: 16px 32px;
-  background-color: var(--accent-color);
   border: none;
   border-radius: 4px;
   min-width: 169px;
+
+  background-color: var(--accent-color);
 
   color: var(--light-text-color);
   font-weight: 500;
@@ -296,10 +297,10 @@ main {
   align-items: center;
   width: 40px;
   height: 40px;
+  border-radius: 50%;
 
   color: var(--light-invercion-text);
 
-  border-radius: 50%;
   background-color: var(--accent-color);
 
   transition: background-color var(--animation);
