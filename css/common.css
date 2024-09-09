@@ -328,18 +328,25 @@ main {
 
   background: var(--backdrop-bg);
 
-  transform: scale(1);
   visibility: visible;
   opacity: 1;
-  transition: transform var(--animation), visibility var(--animation),
-    opacity var(--animation);
+  transition: visibility var(--animation), opacity var(--animation);
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.75);
 }
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
 
   min-width: 408px;
   min-height: 584px;
@@ -348,6 +355,9 @@ main {
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform var(--animation);
 }
 
 .close-modal-btn {
@@ -377,10 +387,4 @@ main {
   fill: var(--light-text-color);
 }
 
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(1.15);
-}
 /* /backdrop and modal*/
