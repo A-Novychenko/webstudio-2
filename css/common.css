@@ -330,19 +330,20 @@ main {
 
   background: var(--backdrop-bg);
 
-  visibility: visible;
-  opacity: 1;
+  visibility: hidden;
+  pointer-events: none;
+  opacity: 0;
   transition: visibility var(--animation), opacity var(--animation);
 }
 
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
+.backdrop.is-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.75);
+.backdrop.is-open .modal {
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .modal {
@@ -351,14 +352,16 @@ main {
   left: 50%;
 
   min-width: 408px;
-  min-height: 584px;
+  /* min-height: 584px; */
+  min-height: 90%;
+  overflow-y: auto;
 
   background-color: var(--modal-bg);
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1.25);
   transition: transform var(--animation);
 }
 

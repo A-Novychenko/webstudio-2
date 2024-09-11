@@ -11,14 +11,14 @@ function onCloseEsc(e) {
 }
 
 function openModal() {
-  backdropRef.classList.remove("is-hidden");
+  backdropRef.classList.add("is-open");
   document.addEventListener("keydown", onCloseEsc);
   closeBtnRef.addEventListener("click", closeModal);
   backdropRef.addEventListener("click", closeModal);
 }
 
 function closeModal() {
-  backdropRef.classList.add("is-hidden");
+  backdropRef.classList.remove("is-open");
   closeBtnRef.removeEventListener("click", openModal);
   backdropRef.removeEventListener("click", closeModal);
   document.removeEventListener("keydown", onCloseEsc);
