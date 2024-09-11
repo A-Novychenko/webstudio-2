@@ -138,7 +138,10 @@
 
                     <ul class="list team-list">
                         <li class="team-item">
-                            <img src="./imgs/team/mark.webp" alt="Mark Guerrero" width="264" height="260">
+                            <div class="team-photo-wrap">
+                                <img class="team-photo" src="./imgs/team/mark.webp" alt="Mark Guerrero" width="264"
+                                    height="260">
+                            </div>
 
                             <div class="team-text-box">
                                 <h3 class="subtitle">Mark Guerrero</h3>
@@ -197,7 +200,10 @@
                         </li>
 
                         <li class="team-item">
-                            <img src="./imgs/team/tom.webp" alt="Tom Ford" width="264" height="260">
+                            <div class="team-photo-wrap">
+                                <img class="team-photo" src="./imgs/team/tom.webp" alt="Tom Ford" width="264"
+                                    height="260">
+                            </div>
 
                             <div class="team-text-box">
                                 <h3 class="subtitle">Tom Ford</h3>
@@ -256,7 +262,10 @@
                         </li>
 
                         <li class="team-item">
-                            <img src="./imgs/team/camila.webp" alt="Camila Garcia" width="264" height="260">
+                            <div class="team-photo-wrap">
+                                <img class="team-photo" src="./imgs/team/camila.webp" alt="Camila Garcia" width="264"
+                                    height="260">
+                            </div>
 
                             <div class="team-text-box">
                                 <h3 class="subtitle">Camila Garcia</h3>
@@ -315,7 +324,10 @@
                         </li>
 
                         <li class="team-item">
-                            <img src="./imgs/team/daniel.webp" alt="Daniel Wilson" width="264" height="260">
+                            <div class="team-photo-wrap">
+                                <img class="team-photo" src="./imgs/team/daniel.webp" alt="Daniel Wilson" width="264"
+                                    height="260">
+                            </div>
 
                             <div class="team-text-box">
                                 <h3 class="subtitle">Daniel Wilson</h3>
@@ -591,8 +603,8 @@
 
     <div class="backdrop is-hidden" data-backdrop>
         <div class="modal">
-            <button class="close-modal-btn" aria-label="Close modal" data-close-modal>
-                <span class="visually-hidden">Close</span>
+            <button class="close-modal-btn" aria-label="Close modal" data-close-modal type="button">
+                <span class="visually-hidden">X</span>
 
                 <svg width="8" height="8">
                     <use href="./imgs/icons.svg#icon-close"></use>
@@ -601,36 +613,7 @@
         </div>
     </div>
 
-    <script>
-        const openBtnRef = document.querySelector("[data-open-modal]")
-        const closeBtnRef = document.querySelector("[data-close-modal]")
-        const backdropRef = document.querySelector("[data-backdrop]")
-
-        openBtnRef.addEventListener("click", openModal)
-
-        function onCloseEsc(e) {
-            if (e.code !== "Escape") return
-
-            closeModal()
-        }
-
-
-        function openModal() {
-            backdropRef.classList.remove("is-hidden")
-            document.addEventListener("keydown", onCloseEsc)
-            closeBtnRef.addEventListener("click", closeModal)
-            backdropRef.addEventListener("click", closeModal)
-        }
-
-        function closeModal() {
-            backdropRef.classList.add("is-hidden")
-            closeBtnRef.removeEventListener("click", openModal)
-            backdropRef.removeEventListener("click", closeModal)
-            document.removeEventListener("keydown", onCloseEsc)
-        }
-
-
-    </script>
+    <script src="./js//modal.js"></script>
 </body>
 
 </html>
