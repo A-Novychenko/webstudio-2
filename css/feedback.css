@@ -1,0 +1,14 @@
+.overall-impression-box {
+  width: 200px;
+}
+
+.overall-impression-input {
+  display: inline-block;
+  width: 100%;
+}
+
+.overall-impression-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
