@@ -33,9 +33,9 @@
                         <ul class="list site-nav">
                             <li><a href="./index.html" class="nav-link link ">Studio</a></li>
 
-                            <li><a href="#portfolio" class="nav-link link">Portfolio</a></li>
+                            <li><a href="./index.html#portfolio" class="nav-link link">Portfolio</a></li>
 
-                            <li><a href="#contacts" class="nav-link link">Contacts</a></li>
+                            <li><a href="./index.html#contacts" class="nav-link link">Contacts</a></li>
 
                             <li><a href="./feedback.html" class="nav-link link current">Feedback</a></li>
 
@@ -58,15 +58,15 @@
         </header>
 
         <main>
-            <section class="feedback-section">
+            <section class="feedback-section section">
                 <div class="container">
                     <h1 class="visually-hidden">Feedback page</h1>
 
                     <form class="feedback-form" id="feedbackForm">
 
                         <div>
-                            <p class="view-question">Як ви оцінюєте загальний вигляд сайту? How do you rate the overall
-                                appearance of the website?</p>
+                            <p class="view-question">Як ви оцінюєте загальний вигляд сайту?</p>
+                            <p class="view-question"> How do you rate the overall appearance of the website?</p>
                             <input type="radio" name="view" id="view-perfectly" value="perfectly" required checked>
                             <label for="view-perfectly">Perfectly</label>
 
@@ -80,9 +80,13 @@
                             <label for="view-badly">Badly</label>
                         </div>
 
+                        <br>
+
                         <div>
                             <p class="functionality-question">Як ви оцінюєте коректність роботи функціональністі сайту?
-                                How do you rate the correctness of the site’s functionality?
+                            </p>
+                            <p class="functionality-question">How do you rate the correctness of the site’s
+                                functionality?
                             </p>
                             <input type="radio" name="functionality" id="functionality-perfectly" value="perfectly"
                                 required checked>
@@ -102,10 +106,12 @@
                             <label for="functionality-broken">The site works incorrectly</label>
                         </div>
 
+                        <br>
+
                         <div>
-                            <p class="browsers">Виберіть браузери, в яких ви перевіряли сайт?
-                                Select the browsers in which you tested the site?
-                            </p>
+                            <p class="browsers">Виберіть браузери, в яких ви перевіряли сайт?</p>
+                            <p class="browsers">Select the browsers in which you tested the site?</p>
+
                             <input type="checkbox" name="browsers" id="browsers-google-chrome" value="google-chrome"
                                 required>
                             <label for="browsers-google-chrome">Google-chrome</label>
@@ -128,12 +134,14 @@
                             <label for="browsers-other">Other</label>
                         </div>
 
+                        <br>
+
                         <div>
-                            <p class="functionality-question">Як би ви оцінили своє загальне враження від сайту?
-                                How would you rate your overall impression of the site?
+                            <p class="functionality-question">Як би ви оцінили своє загальне враження від сайту?</p>
+                            <p class="functionality-question">How would you rate your overall impression of the site?
                             </p>
 
-                            <label for="overall-impression">1 - badly ... 5 - Perfectly</label>
+                            <label for="overall-impression">1 - badly ... 5 - perfectly</label>
                             <div class="overall-impression-box">
                                 <input class="overall-impression-input" type="range" name="overall-impression"
                                     id="overall-impression" min="1" max="5" value="5" step="1"
@@ -150,7 +158,78 @@
 
                         </div>
 
-                        <button type="submit">Submit feedback</button>
+                        <br>
+
+                        <div>
+                            <p class="markup-question">Як ви оцінюєте якість розмітки цього сайту?
+                            </p>
+
+                            <label for="html-quality">How do you rate the quality of the markup of this site?</label>
+                            <textarea name="html" id="html-quality"></textarea>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <p class="style-question">Як ви оцінюєте якість коду CSS цього сайту?
+                            </p>
+
+                            <label for="css-quality">How do you rate the quality of the CSS code on this site?</label>
+                            <textarea name="css" id="css-quality"></textarea>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <p class="js-question">Як ви оцінюєте якість коду JS цього сайту?
+                            </p>
+
+                            <label for="js-quality">How do you rate the quality of the JS code on this site?</label>
+                            <textarea name="js" id="js-quality"></textarea>
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <p class="comments-question">Чи є у вас коментарі або побажання?
+                            </p>
+
+                            <label for="comments-quality">Do you have any comments or suggestions?</label>
+                            <textarea name="comments" id="comments-quality"></textarea>
+                        </div>
+
+                        <br>
+
+                        <div class="reviewer-box">
+                            <p class="reviewer-title">Будь ласка, заповніть наступні поля, щоб ми могли краще зрозуміти
+                                ваш фідбек
+                            </p>
+                            <p class="reviewer-title">Please fill in the following fields so we can better understand
+                                your feedback.
+                            </p>
+
+                            <label for="reviewer-name">Name</label>
+                            <input type="text" name="reviewer-name" id="reviewer-name" />
+
+                            <label for="reviewer-email">Email</label>
+                            <input type="email" name="reviewer-email" id="reviewer-email" />
+
+                            <label for="reviewer-phone">Phone number</label>
+                            <input type="tel" name="reviewer-phone" id="reviewer-phone" />
+
+                            <label for="reviewer-job-title">Job Title</label>
+                            <input type="text" name="reviewer-job-title" id="reviewer-job-title" />
+
+                            <label for="reviewer-company">Company</label>
+                            <input type="text" name="reviewer-company" id="reviewer-company" />
+
+                            <label for="reviewer-date">Date of review</label>
+                            <input type="datetime-local" name="reviewer-date" id="reviewer-date" />
+                        </div>
+
+                        <br>
+
+                        <button class="button" type="submit">Send feedback</button>
                     </form>
 
                 </div>
@@ -234,10 +313,16 @@
             event.preventDefault(); // Запобігає реальному відправленню форми
 
             const formData = new FormData(form);
-            const data = {};
+            const data = { browsers: [] };
 
             // Перетворюємо FormData у звичайний об'єкт
             formData.forEach((value, key) => {
+                if (key === "browsers") {
+                    data.browsers.push(value)
+
+                    return
+                }
+
                 data[key] = value;
             });
 

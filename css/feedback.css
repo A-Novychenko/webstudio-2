@@ -12,3 +12,8 @@
   width: 100%;
   justify-content: space-between;
 }
+
+.reviewer-box {
+  display: flex;
+  flex-direction: column;
+}
