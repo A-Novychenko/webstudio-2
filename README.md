@@ -1,5 +1,7 @@
 # Webstudio 
 
+
+
 ## Опис проекту
 ### Це тестове завдання з верстки вебсайту. Проект має на меті створити статичний вебсайт". Верстка виконана за допомогою HTML, CSS та JavaScript.
 
@@ -41,7 +43,7 @@ git clone https://github.com/A-Novychenko/commit.git](https://github.com/A-Novyc
 
 ---
 
-## Contacts
+## Контакти
 
 Oleksandr Novychenko
 
