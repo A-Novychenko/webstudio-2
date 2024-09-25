@@ -332,12 +332,12 @@
         const form = document.getElementById('feedbackForm');
 
         form.addEventListener('submit', function (event) {
-            event.preventDefault(); // Запобігає реальному відправленню форми
+            event.preventDefault();
 
             const formData = new FormData(form);
             const data = { browsers: [] };
 
-            // Перетворюємо FormData у звичайний об'єкт
+
             formData.forEach((value, key) => {
                 if (key === "browsers") {
                     data.browsers.push(value)
@@ -348,7 +348,7 @@
                 data[key] = value;
             });
 
-            console.log(data); // Виводимо дані форми в консоль
+            console.log(data);
         });
     </script>
 
