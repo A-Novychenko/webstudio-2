@@ -17,3 +17,7 @@
   display: flex;
   flex-direction: column;
 }
+
+.reviewer-box input::placeholder {
+  color: rgb(148, 176, 176);
+}
