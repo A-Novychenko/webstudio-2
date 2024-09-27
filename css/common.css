@@ -68,6 +68,10 @@ main {
   flex-grow: 1;
 }
 
+textarea {
+  resize: none;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
