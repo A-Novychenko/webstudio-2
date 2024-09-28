@@ -63,7 +63,7 @@
 
                     <form class="feedback-form" id="feedbackForm">
 
-                        <div class="form-user-experience">
+                        <fieldset class="form-user-experience">
                             <fieldset>
                                 <legend class="view-question"> How do you rate the overall appearance of the website?
                                 </legend>
@@ -194,7 +194,7 @@
                                 <div class="overall-impression-box">
                                     <input class="overall-impression-input" type="range" name="overall-impression"
                                         id="overall-impression" min="1" max="5" value="5" step="1"
-                                        list="overall-impression-range" required>
+                                        list="overall-impression-range">
 
                                     <datalist class="overall-impression-list" id="overall-impression-range">
                                         <option value="1" label="1">
@@ -205,9 +205,9 @@
                                     </datalist>
                                 </div>
                             </div>
-                        </div>
+                        </fieldset>
 
-                        <fieldset>
+                        <fieldset class="form-technical-experience">
                             <ul class="list">
                                 <li>
                                     <p class="markup-question">Як ви оцінюєте якість розмітки цього сайту?
@@ -246,60 +246,59 @@
                             </ul>
                         </fieldset>
 
-                        <div class="reviewer-box">
-                            <p class="reviewer-title">Будь ласка, заповніть наступні поля, щоб ми могли краще
-                                зрозуміти
-                                ваш фідбек
-                            </p>
-                            <p class="reviewer-title">Please fill in the following fields so we can better
-                                understand
-                                your feedback.
-                            </p>
+                        <fieldset class="form-contact-info">
+                            <div class="reviewer-box">
+                                <p class="reviewer-title">Будь ласка, заповніть наступні поля, щоб ми могли краще
+                                    зрозуміти
+                                    ваш фідбек
+                                </p>
+                                <p class="reviewer-title">Please fill in the following fields so we can better
+                                    understand
+                                    your feedback.
+                                </p>
 
-                            <label for="reviewer-name">Name</label>
-                            <input type="text" name="reviewer-name" id="reviewer-name" placeholder="Mango" />
+                                <label for="reviewer-name">Name</label>
+                                <input type="text" name="reviewer-name" id="reviewer-name" placeholder="Mango" />
 
-                            <label for="reviewer-email">Email</label>
-                            <input type="email" name="reviewer-email" id="reviewer-email"
-                                placeholder="Mango@mail.com" />
+                                <label for="reviewer-email">Email</label>
+                                <input type="email" name="reviewer-email" id="reviewer-email"
+                                    placeholder="Mango@mail.com" />
 
-                            <label for="reviewer-phone">Phone number</label>
-                            <input type="tel" name="reviewer-phone" id="reviewer-phone" placeholder="0123456789" />
+                                <label for="reviewer-phone">Phone number</label>
+                                <input type="tel" name="reviewer-phone" id="reviewer-phone" placeholder="0123456789" />
 
-                            <label for="reviewer-job-title">Job Title</label>
-                            <input type="text" name="reviewer-job-title" id="reviewer-job-title" placeholder="Junior" />
+                                <label for="reviewer-job-title">Job Title</label>
+                                <input type="text" name="reviewer-job-title" id="reviewer-job-title"
+                                    placeholder="Junior" />
 
-                            <label for="reviewer-company">Company</label>
-                            <input type="text" name="reviewer-company" id="reviewer-company" placeholder="WDS" />
+                                <label for="reviewer-company">Company</label>
+                                <input type="text" name="reviewer-company" id="reviewer-company" placeholder="WDS" />
 
-                            <label for="reviewer-date">Date of review</label>
-                            <input type="datetime-local" name="reviewer-date" id="reviewer-date" />
+                                <label for="reviewer-date">Date of review</label>
+                                <input type="datetime-local" name="reviewer-date" id="reviewer-date" />
 
-                        </div>
+                            </div>
 
-                        <br>
+                            <div>
+                                <label for="feedback-type">Feedback type</label>
 
-                        <div>
-                            <label for="feedback-type">Feedback type</label>
+                                <select name="feedback-type" id="feedback-type">
+                                    <optgroup label="perfectly">
+                                        <option value="5">😎🔥</option>
+                                        <option value="4">😎</option>
+                                    </optgroup>
 
-                            <select name="feedback-type" id="feedback-type">
-                                <optgroup label="perfectly">
-                                    <option value="5">😎🔥</option>
-                                    <option value="4">😎</option>
-                                </optgroup>
+                                    <optgroup label="neutral">
+                                        <option value="3">🤔</option>
+                                    </optgroup>
 
-                                <optgroup label="neutral">
-                                    <option value="3">🤔</option>
-                                </optgroup>
-
-                                <optgroup label="badly">
-                                    <option value="2">😏</option>
-                                    <option value="1">😏👀</option>
-                                </optgroup>
-                            </select>
-                        </div>
-
-                        <br>
+                                    <optgroup label="badly">
+                                        <option value="2">😏</option>
+                                        <option value="1">😏👀</option>
+                                    </optgroup>
+                                </select>
+                            </div>
+                        </fieldset>
 
                         <button class="button" type="submit">Send feedback</button>
                     </form>
