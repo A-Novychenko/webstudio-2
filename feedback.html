@@ -63,147 +63,196 @@
 
                     <form class="feedback-form" id="feedbackForm">
 
-                        <div>
-                            <p class="view-question">Як ви оцінюєте загальний вигляд сайту?</p>
-                            <p class="view-question"> How do you rate the overall appearance of the website?</p>
-                            <input type="radio" name="view" id="view-perfectly" value="perfectly" required checked>
-                            <label for="view-perfectly">Perfectly</label>
+                        <div class="form-user-experience">
+                            <fieldset>
+                                <legend class="view-question"> How do you rate the overall appearance of the website?
+                                </legend>
 
-                            <input type="radio" name="view" id="view-good" value="good" required>
-                            <label for="view-good">Good</label>
+                                <p class="view-question">Як ви оцінюєте загальний вигляд сайту?</p>
 
-                            <input type="radio" name="view" id="view-satisfactorily" value="satisfactorily" required>
-                            <label for="view-satisfactorily">Satisfactorily</label>
+                                <ul class="list">
+                                    <li>
+                                        <input type="radio" name="view" id="view-perfectly" value="perfectly" required
+                                            checked>
+                                        <label for="view-perfectly">Perfectly</label>
+                                    </li>
 
-                            <input type="radio" name="view" id="view-badly" value="badly" required>
-                            <label for="view-badly">Badly</label>
-                        </div>
+                                    <li>
+                                        <input type="radio" name="view" id="view-good" value="good" required>
+                                        <label for="view-good">Good</label>
+                                    </li>
 
-                        <br>
+                                    <li>
+                                        <input type="radio" name="view" id="view-satisfactorily" value="satisfactorily"
+                                            required>
+                                        <label for="view-satisfactorily">Satisfactorily</label>
+                                    </li>
 
-                        <div>
-                            <p class="functionality-question">Як ви оцінюєте коректність роботи функціональністі сайту?
-                            </p>
-                            <p class="functionality-question">How do you rate the correctness of the site’s
-                                functionality?
-                            </p>
-                            <input type="radio" name="functionality" id="functionality-perfectly" value="perfectly"
-                                required checked>
-                            <label for="functionality-perfectly">Everything works perfectly</label>
+                                    <li>
+                                        <input type="radio" name="view" id="view-badly" value="badly" required>
+                                        <label for="view-badly">Badly</label>
+                                    </li>
+                                </ul>
 
-                            <input type="radio" name="functionality" id="functionality-minor" value="minor" required>
-                            <label for="functionality-minor">There are minor issues</label>
+                            </fieldset>
 
-                            <input type="radio" name="functionality" id="functionality-errors" value="errors" required>
-                            <label for="functionality-errors">It works, but there are a few errors</label>
+                            <fieldset>
+                                <legend class="functionality-question">How do you rate the correctness of the site’s
+                                    functionality?
+                                </legend>
 
-                            <input type="radio" name="functionality" id="functionality-incomplete" value="incomplete"
-                                required>
-                            <label for="functionality-incomplete">Some functionality doesn't work</label>
+                                <p class="functionality-question">Як ви оцінюєте коректність роботи функціональністі
+                                    сайту?
+                                </p>
 
-                            <input type="radio" name="functionality" id="functionality-broken" value="broken" required>
-                            <label for="functionality-broken">The site works incorrectly</label>
-                        </div>
+                                <ul class="list">
+                                    <li>
+                                        <input type="radio" name="functionality" id="functionality-perfectly"
+                                            value="perfectly" required checked>
+                                        <label for="functionality-perfectly">Everything works perfectly</label>
+                                    </li>
 
-                        <br>
+                                    <li>
+                                        <input type="radio" name="functionality" id="functionality-minor" value="minor"
+                                            required>
+                                        <label for="functionality-minor">There are minor issues</label>
+                                    </li>
 
-                        <div>
-                            <p class="browsers">Виберіть браузери, в яких ви перевіряли сайт?</p>
-                            <p class="browsers">Select the browsers in which you tested the site?</p>
+                                    <li>
+                                        <input type="radio" name="functionality" id="functionality-errors"
+                                            value="errors" required>
+                                        <label for="functionality-errors">It works, but there are a few errors</label>
+                                    </li>
 
-                            <input type="checkbox" name="browsers" id="browsers-google-chrome" value="google-chrome"
-                                required>
-                            <label for="browsers-google-chrome">Google-chrome</label>
+                                    <li>
+                                        <input type="radio" name="functionality" id="functionality-incomplete"
+                                            value="incomplete" required>
+                                        <label for="functionality-incomplete">Some functionality doesn't work</label>
+                                    </li>
 
-                            <input type="checkbox" name="browsers" id="browsers-opera" value="opera" required>
-                            <label for="browsers-opera">Opera</label>
+                                    <li>
+                                        <input type="radio" name="functionality" id="functionality-broken"
+                                            value="broken" required>
+                                        <label for="functionality-broken">The site works incorrectly</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
 
-                            <input type="checkbox" name="browsers" id="browsers-mozilla-firefox" value="mozilla-firefox"
-                                required>
-                            <label for="browsers-mozilla-firefox">Mozilla Firefox</label>
+                            <fieldset>
+                                <legend class="browsers">Select the browsers in which you tested the site?</legend>
 
-                            <input type="checkbox" name="browsers" id="browsers-safari" value="safari" required>
-                            <label for="browsers-safari">Safari</label>
+                                <p class="browsers">Виберіть браузери, в яких ви перевіряли сайт?</p>
 
-                            <input type="checkbox" name="browsers" id="browsers-microsoft-edge" value="microsoft-edge"
-                                required>
-                            <label for="browsers-microsoft-edge">Microsoft Edge</label>
+                                <ul class="list">
+                                    <li>
+                                        <input type="checkbox" name="browsers" id="browsers-google-chrome"
+                                            value="google-chrome" required>
+                                        <label for="browsers-google-chrome">Google-chrome</label>
+                                    </li>
 
-                            <input type="checkbox" name="browsers" id="browsers-other" value="other" required>
-                            <label for="browsers-other">Other</label>
-                        </div>
+                                    <li>
+                                        <input type="checkbox" name="browsers" id="browsers-opera" value="opera"
+                                            required>
+                                        <label for="browsers-opera">Opera</label>
+                                    </li>
 
-                        <br>
+                                    <li>
+                                        <input type="checkbox" name="browsers" id="browsers-mozilla-firefox"
+                                            value="mozilla-firefox" required>
+                                        <label for="browsers-mozilla-firefox">Mozilla Firefox</label>
+                                    </li>
 
-                        <div>
-                            <p class="functionality-question">Як би ви оцінили своє загальне враження від сайту?</p>
-                            <p class="functionality-question">How would you rate your overall impression of the site?
-                            </p>
+                                    <li>
+                                        <input type="checkbox" name="browsers" id="browsers-safari" value="safari"
+                                            required>
+                                        <label for="browsers-safari">Safari</label>
+                                    </li>
 
-                            <label for="overall-impression">1 - badly ... 5 - perfectly</label>
-                            <div class="overall-impression-box">
-                                <input class="overall-impression-input" type="range" name="overall-impression"
-                                    id="overall-impression" min="1" max="5" value="5" step="1"
-                                    list="overall-impression-range" required>
+                                    <li>
+                                        <input type="checkbox" name="browsers" id="browsers-microsoft-edge"
+                                            value="microsoft-edge" required>
+                                        <label for="browsers-microsoft-edge">Microsoft Edge</label>
+                                    </li>
 
-                                <datalist class="overall-impression-list" id="overall-impression-range">
-                                    <option value="1" label="1">
-                                    <option value="2" label="2">
-                                    <option value="3" label="3">
-                                    <option value="4" label="4">
-                                    <option value="5" label="5">
-                                </datalist>
+                                    <li>
+                                        <input type="checkbox" name="browsers" id="browsers-other" value="other"
+                                            required>
+                                        <label for="browsers-other">Other</label>
+                                    </li>
+                                </ul>
+
+                            </fieldset>
+
+                            <div>
+                                <p class="functionality-question">How would you rate your overall impression of the
+                                    site?
+                                </p>
+
+                                <p class="functionality-question">Як би ви оцінили своє загальне враження від сайту?</p>
+
+                                <label for="overall-impression">1 - badly ... 5 - perfectly</label>
+                                <div class="overall-impression-box">
+                                    <input class="overall-impression-input" type="range" name="overall-impression"
+                                        id="overall-impression" min="1" max="5" value="5" step="1"
+                                        list="overall-impression-range" required>
+
+                                    <datalist class="overall-impression-list" id="overall-impression-range">
+                                        <option value="1" label="1">
+                                        <option value="2" label="2">
+                                        <option value="3" label="3">
+                                        <option value="4" label="4">
+                                        <option value="5" label="5">
+                                    </datalist>
+                                </div>
                             </div>
-
                         </div>
 
-                        <br>
+                        <fieldset>
+                            <ul class="list">
+                                <li>
+                                    <p class="markup-question">Як ви оцінюєте якість розмітки цього сайту?
+                                    </p>
 
-                        <div>
-                            <p class="markup-question">Як ви оцінюєте якість розмітки цього сайту?
-                            </p>
+                                    <label for="html-quality">How do you rate the quality of the markup of this
+                                        site?</label>
+                                    <textarea name="html" id="html-quality"></textarea>
+                                </li>
 
-                            <label for="html-quality">How do you rate the quality of the markup of this site?</label>
-                            <textarea name="html" id="html-quality"></textarea>
-                        </div>
+                                <li>
+                                    <p class="style-question">Як ви оцінюєте якість коду CSS цього сайту?
+                                    </p>
 
-                        <br>
+                                    <label for="css-quality">How do you rate the quality of the CSS code on this
+                                        site?</label>
+                                    <textarea name="css" id="css-quality"></textarea>
+                                </li>
 
-                        <div>
-                            <p class="style-question">Як ви оцінюєте якість коду CSS цього сайту?
-                            </p>
+                                <li>
+                                    <p class="js-question">Як ви оцінюєте якість коду JS цього сайту?
+                                    </p>
 
-                            <label for="css-quality">How do you rate the quality of the CSS code on this site?</label>
-                            <textarea name="css" id="css-quality"></textarea>
-                        </div>
+                                    <label for="js-quality">How do you rate the quality of the JS code on this
+                                        site?</label>
+                                    <textarea name="js" id="js-quality"></textarea>
+                                </li>
 
-                        <br>
+                                <li>
+                                    <p class="comments-question">Чи є у вас коментарі або побажання?
+                                    </p>
 
-                        <div>
-                            <p class="js-question">Як ви оцінюєте якість коду JS цього сайту?
-                            </p>
-
-                            <label for="js-quality">How do you rate the quality of the JS code on this site?</label>
-                            <textarea name="js" id="js-quality"></textarea>
-                        </div>
-
-                        <br>
-
-                        <div>
-                            <p class="comments-question">Чи є у вас коментарі або побажання?
-                            </p>
-
-                            <label for="comments-quality">Do you have any comments or suggestions?</label>
-                            <textarea name="comments" id="comments-quality"></textarea>
-                        </div>
-
-                        <br>
+                                    <label for="comments-quality">Do you have any comments or suggestions?</label>
+                                    <textarea name="comments" id="comments-quality"></textarea>
+                                </li>
+                            </ul>
+                        </fieldset>
 
                         <div class="reviewer-box">
-                            <p class="reviewer-title">Будь ласка, заповніть наступні поля, щоб ми могли краще зрозуміти
+                            <p class="reviewer-title">Будь ласка, заповніть наступні поля, щоб ми могли краще
+                                зрозуміти
                                 ваш фідбек
                             </p>
-                            <p class="reviewer-title">Please fill in the following fields so we can better understand
+                            <p class="reviewer-title">Please fill in the following fields so we can better
+                                understand
                                 your feedback.
                             </p>
 

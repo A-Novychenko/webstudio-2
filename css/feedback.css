@@ -1,3 +1,7 @@
+.form-user-experience {
+  background-color: var(--secondary-bg-color);
+}
+
 .overall-impression-box {
   width: 200px;
 }
