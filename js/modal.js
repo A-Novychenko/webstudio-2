@@ -14,12 +14,18 @@ function openModal() {
   backdropRef.classList.add("is-open");
   document.addEventListener("keydown", onCloseEsc);
   closeBtnRef.addEventListener("click", closeModal);
-  backdropRef.addEventListener("click", closeModal);
+  backdropRef.addEventListener("click", clickBackdropCloseModal);
 }
 
 function closeModal() {
   backdropRef.classList.remove("is-open");
   closeBtnRef.removeEventListener("click", openModal);
-  backdropRef.removeEventListener("click", closeModal);
+  backdropRef.removeEventListener("click", clickBackdropCloseModal);
   document.removeEventListener("keydown", onCloseEsc);
+}
+
+function clickBackdropCloseModal(e) {
+  if (e.target === e.currentTarget) {
+    closeModal();
+  }
 }
