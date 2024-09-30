@@ -57,249 +57,415 @@
         </header>
 
         <main>
+
             <section class="feedback-section section">
                 <div class="container">
-                    <h1 class="visually-hidden">Feedback page</h1>
+                    <h1 class="main-title">I would appreciate it if you could evaluate my work by
+                        filling out the
+                        feedback form.</h1>
+                </div>
+            </section>
+
+            <section class="feedback-form-section section">
+                <div class="container">
 
                     <form class="feedback-form" id="feedbackForm">
-                        <fieldset class="form-user-experience">
-                            <fieldset>
-                                <legend class="view-question"> How do you rate the overall appearance of the website?
+                        <fieldset class="feedback-user-experience fieldset-reset">
+                            <fieldset class="fieldset-reset fieldset-view">
+                                <!-- <p>Як ви оцінюєте загальний вигляд сайту?</p> -->
+                                <legend class="site-view-title section-title form-section-title"> How do you rate the
+                                    overall appearance of
+                                    the
+                                    website?
                                 </legend>
 
-                                <p class="view-question">Як ви оцінюєте загальний вигляд сайту?</p>
-
-                                <ul class="list">
+                                <ul class="site-view-list list">
                                     <li>
-                                        <input type="radio" name="view" id="view-perfectly" value="perfectly" required
-                                            checked>
-                                        <label for="view-perfectly">Perfectly</label>
+                                        <label class="site-view-wrap">
+                                            <input class="native-radio native-input-reset" type="radio" name="view"
+                                                value="perfectly" required checked>
+
+                                            <span class="radio-btn"></span>
+
+                                            <span class="site-view-label">Perfectly</span>
+                                        </label>
                                     </li>
 
                                     <li>
-                                        <input type="radio" name="view" id="view-good" value="good" required>
-                                        <label for="view-good">Good</label>
+                                        <label class="site-view-wrap">
+                                            <input class="native-radio native-input-reset" type="radio" name="view"
+                                                value="good" required>
+
+                                            <span class="radio-btn"></span>
+
+                                            <span class="site-view-label">Good</span>
+                                        </label>
                                     </li>
 
                                     <li>
-                                        <input type="radio" name="view" id="view-satisfactorily" value="satisfactorily"
-                                            required>
-                                        <label for="view-satisfactorily">Satisfactorily</label>
+                                        <label class="site-view-wrap">
+                                            <input class="native-radio native-input-reset" type="radio" name="view"
+                                                value="satisfactorily" required>
+
+                                            <span class="radio-btn"></span>
+
+                                            <span class="site-view-label">Satisfactorily</span>
+                                        </label>
                                     </li>
 
                                     <li>
-                                        <input type="radio" name="view" id="view-badly" value="badly" required>
-                                        <label for="view-badly">Badly</label>
+                                        <label class="site-view-wrap">
+                                            <input class="native-radio native-input-reset" type="radio" name="view"
+                                                value="badly" required>
+
+                                            <span class="radio-btn"></span>
+
+                                            <span class="site-view-label">Badly</span>
+                                        </label>
                                     </li>
                                 </ul>
 
                             </fieldset>
 
-                            <fieldset>
-                                <legend class="functionality-question">How do you rate the correctness of the site’s
+                            <fieldset class="fieldset-reset fieldset-view">
+                                <!-- <p class="functionality-question">Як ви оцінюєте коректність роботи функціональністі
+                                    сайту?
+                                </p> -->
+                                <legend class="functionality-question section-title form-section-title">How do you rate
+                                    the correctness of
+                                    the site’s
                                     functionality?
                                 </legend>
 
-                                <p class="functionality-question">Як ви оцінюєте коректність роботи функціональністі
-                                    сайту?
-                                </p>
-
-                                <ul class="list">
+                                <ul class="site-view-list site-view-list-cols list">
                                     <li>
-                                        <input type="radio" name="functionality" id="functionality-perfectly"
-                                            value="perfectly" required checked>
-                                        <label for="functionality-perfectly">Everything works perfectly</label>
+                                        <label class="site-view-wrap">
+                                            <input class="native-radio native-input-reset" type="radio"
+                                                name="functionality" value="perfectly" required checked>
+
+                                            <span class="radio-btn"></span>
+
+                                            <span class="site-view-label">Everything works perfectly</span>
+                                        </label>
                                     </li>
 
                                     <li>
-                                        <input type="radio" name="functionality" id="functionality-minor" value="minor"
-                                            required>
-                                        <label for="functionality-minor">There are minor issues</label>
+                                        <label class="site-view-wrap">
+                                            <input class="native-radio native-input-reset" type="radio"
+                                                name="functionality" value="minor" required>
+
+                                            <span class="radio-btn"></span>
+
+                                            <span class="site-view-label">There are minor issues</span>
+                                        </label>
                                     </li>
 
                                     <li>
-                                        <input type="radio" name="functionality" id="functionality-errors"
-                                            value="errors" required>
-                                        <label for="functionality-errors">It works, but there are a few errors</label>
+                                        <label class="site-view-wrap">
+                                            <input class="native-radio native-input-reset" type="radio"
+                                                name="functionality" value="errors" required>
+
+                                            <span class="radio-btn"></span>
+
+                                            <span class="site-view-label">It works, but there are a few errors</span>
+                                        </label>
                                     </li>
 
                                     <li>
-                                        <input type="radio" name="functionality" id="functionality-incomplete"
-                                            value="incomplete" required>
-                                        <label for="functionality-incomplete">Some functionality doesn't work</label>
+                                        <label class="site-view-wrap">
+                                            <input class="native-radio native-input-reset" type="radio"
+                                                name="functionality" value="incomplete" required>
+
+                                            <span class="radio-btn"></span>
+
+                                            <span class="site-view-label">Some functionality doesn't work</span>
+                                        </label>
                                     </li>
 
                                     <li>
-                                        <input type="radio" name="functionality" id="functionality-broken"
-                                            value="broken" required>
-                                        <label for="functionality-broken">The site works incorrectly</label>
+                                        <label class="site-view-wrap">
+                                            <input class="native-radio native-input-reset" type="radio"
+                                                name="functionality" value="broken" required>
+
+                                            <span class="radio-btn"></span>
+
+                                            <span class="site-view-label">The site works incorrectly</span>
+                                        </label>
                                     </li>
                                 </ul>
                             </fieldset>
 
-                            <fieldset>
-                                <legend class="browsers">Select the browsers in which you tested the site?</legend>
+                            <fieldset class="fieldset-reset fieldset-view">
+                                <!-- <p class="browsers">Виберіть браузери, в яких ви перевіряли сайт?</p> -->
+                                <legend class="browsers section-title form-section-title">Select the browsers in which
+                                    you tested the site?
+                                </legend>
 
-                                <p class="browsers">Виберіть браузери, в яких ви перевіряли сайт?</p>
+                                <ul class="site-view-list list">
 
-                                <ul class="list">
                                     <li>
-                                        <input type="checkbox" name="browsers" id="browsers-google-chrome"
-                                            value="google-chrome" required>
-                                        <label for="browsers-google-chrome">Google-chrome</label>
+                                        <label class="site-view-wrap">
+                                            <input class="native-checkbox native-input-reset" type="checkbox"
+                                                name="browsers" value="google-chrome">
+
+                                            <svg class="checkbox" width="16" height="16">
+                                                <use class="checkbox-icon" href="./imgs/icons.svg#icon-checkmark"></use>
+                                            </svg>
+
+                                            <span class="site-view-label">Google-chrome</span>
+                                        </label>
                                     </li>
 
                                     <li>
-                                        <input type="checkbox" name="browsers" id="browsers-opera" value="opera"
-                                            required>
-                                        <label for="browsers-opera">Opera</label>
+                                        <label class="site-view-wrap">
+                                            <input class="native-checkbox native-input-reset" type="checkbox"
+                                                name="browsers" value="opera">
+
+                                            <svg class="checkbox" width="16" height="16">
+                                                <use class="checkbox-icon" href="./imgs/icons.svg#icon-checkmark"></use>
+                                            </svg>
+
+                                            <span class="site-view-label">Opera</span>
+                                        </label>
                                     </li>
 
                                     <li>
-                                        <input type="checkbox" name="browsers" id="browsers-mozilla-firefox"
-                                            value="mozilla-firefox" required>
-                                        <label for="browsers-mozilla-firefox">Mozilla Firefox</label>
+                                        <label class="site-view-wrap">
+                                            <input class="native-checkbox native-input-reset" type="checkbox"
+                                                name="browsers" value="mozilla-firefox">
+
+                                            <svg class="checkbox" width="16" height="16">
+                                                <use class="checkbox-icon" href="./imgs/icons.svg#icon-checkmark"></use>
+                                            </svg>
+
+                                            <span class="site-view-label">Mozilla Firefox</span>
+                                        </label>
                                     </li>
 
                                     <li>
-                                        <input type="checkbox" name="browsers" id="browsers-safari" value="safari"
-                                            required>
-                                        <label for="browsers-safari">Safari</label>
+                                        <label class="site-view-wrap">
+                                            <input class="native-checkbox native-input-reset" type="checkbox"
+                                                name="browsers" value="safari">
+
+                                            <svg class="checkbox" width="16" height="16">
+                                                <use class="checkbox-icon" href="./imgs/icons.svg#icon-checkmark"></use>
+                                            </svg>
+
+                                            <span class="site-view-label">Safari</span>
+                                        </label>
                                     </li>
 
                                     <li>
-                                        <input type="checkbox" name="browsers" id="browsers-microsoft-edge"
-                                            value="microsoft-edge" required>
-                                        <label for="browsers-microsoft-edge">Microsoft Edge</label>
+                                        <label class="site-view-wrap">
+                                            <input class="native-checkbox native-input-reset" type="checkbox"
+                                                name="browsers" value="microsoft-edge">
+
+                                            <svg class="checkbox" width="16" height="16">
+                                                <use class="checkbox-icon" href="./imgs/icons.svg#icon-checkmark"></use>
+                                            </svg>
+
+                                            <span class="site-view-label">Microsoft Edge</span>
+                                        </label>
                                     </li>
 
                                     <li>
-                                        <input type="checkbox" name="browsers" id="browsers-other" value="other"
-                                            required>
-                                        <label for="browsers-other">Other</label>
+                                        <label class="site-view-wrap">
+                                            <input class="native-checkbox native-input-reset" type="checkbox"
+                                                name="browsers" value="other">
+
+                                            <svg class="checkbox" width="16" height="16">
+                                                <use class="checkbox-icon" href="./imgs/icons.svg#icon-checkmark"></use>
+                                            </svg>
+
+                                            <span class="site-view-label">Other</span>
+                                        </label>
                                     </li>
                                 </ul>
-
                             </fieldset>
 
-                            <div>
-                                <p class="functionality-question">How would you rate your overall impression of the
+                            <fieldset class="fieldset-reset fieldset-view">
+                                <!-- <p class="functionality-question">Як би ви оцінили своє загальне враження від сайту?</p> -->
+                                <legend class="section-title form-section-title">How would you rate your overall
+                                    impression
+                                    of the
                                     site?
-                                </p>
+                                </legend>
 
-                                <p class="functionality-question">Як би ви оцінили своє загальне враження від сайту?</p>
+                                <ul class="site-view-list site-view-list-smiles list">
+                                    <li>
+                                        <label class="site-view-wrap">
+                                            <input class="native-radio native-input-reset" type="radio" name="rating"
+                                                value="1" required>
 
-                                <label for="overall-impression">1 - badly ... 5 - perfectly</label>
-                                <div class="overall-impression-box">
-                                    <input class="overall-impression-input" type="range" name="overall-impression"
-                                        id="overall-impression" min="1" max="5" value="5" step="1"
-                                        list="overall-impression-range">
+                                            <svg class="radio-smile" width="32" height="32">
+                                                <use href="./imgs/icons.svg#icon-one"></use>
+                                            </svg>
+                                        </label>
+                                    </li>
 
-                                    <datalist class="overall-impression-list" id="overall-impression-range">
-                                        <option value="1" label="1">
-                                        <option value="2" label="2">
-                                        <option value="3" label="3">
-                                        <option value="4" label="4">
-                                        <option value="5" label="5">
-                                    </datalist>
-                                </div>
-                            </div>
+                                    <li>
+                                        <label class="site-view-wrap">
+                                            <input class="native-radio native-input-reset" type="radio" name="rating"
+                                                value="2" required>
+
+                                            <svg class="radio-smile" width="32" height="32">
+                                                <use href="./imgs/icons.svg#icon-two"></use>
+                                            </svg>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <label class="site-view-wrap">
+                                            <input class="native-radio native-input-reset" type="radio" name="rating"
+                                                value="3" required>
+
+                                            <svg class="radio-smile" width="32" height="32">
+                                                <use href="./imgs/icons.svg#icon-three"></use>
+                                            </svg>
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <label class="site-view-wrap">
+                                            <input class="native-radio native-input-reset" type="radio" name="rating"
+                                                value="4" required checked>
+
+                                            <svg class="radio-smile" width="32" height="32">
+                                                <use href="./imgs/icons.svg#icon-four"></use>
+                                            </svg>
+
+                                        </label>
+                                    </li>
+
+                                    <li>
+                                        <label class="site-view-wrap">
+                                            <input class="native-radio native-input-reset" type="radio" name="rating"
+                                                value="5" required>
+
+                                            <svg class="radio-smile" width="32" height="32">
+                                                <use href="./imgs/icons.svg#icon-five"></use>
+                                            </svg>
+
+                                        </label>
+                                    </li>
+                                </ul>
+
+                            </fieldset>
+
                         </fieldset>
 
-                        <fieldset class="form-technical-experience">
-                            <ul class="list">
-                                <li>
-                                    <p class="markup-question">Як ви оцінюєте якість розмітки цього сайту?
-                                    </p>
+                        <fieldset class="feedback-technical-experience fieldset-reset">
+                            <legend class="site-view-title section-title form-section-title">Please evaluate
+                                my
+                                technical abilities
+                            </legend>
 
-                                    <label for="html-quality">How do you rate the quality of the markup of this
-                                        site?</label>
-                                    <textarea name="html" id="html-quality"></textarea>
+                            <ul class="hard-skills-list list">
+                                <li>
+                                    <label class="subtitle hard-skills-box">
+                                        <span class="hard-skills-desc">
+                                            How do you rate the
+                                            quality of the markup of this
+                                            site?
+                                        </span>
+
+                                        <textarea name="html" class="hard-skills-field"></textarea>
+                                    </label>
                                 </li>
 
                                 <li>
-                                    <p class="style-question">Як ви оцінюєте якість коду CSS цього сайту?
-                                    </p>
+                                    <label class="subtitle hard-skills-box">
+                                        <span class="hard-skills-desc">
+                                            How do you rate the
+                                            quality of the CSS code on this
+                                            site?
+                                        </span>
 
-                                    <label for="css-quality">How do you rate the quality of the CSS code on this
-                                        site?</label>
-                                    <textarea name="css" id="css-quality"></textarea>
+                                        <textarea name="css" class="hard-skills-field"></textarea>
+                                    </label>
                                 </li>
 
                                 <li>
-                                    <p class="js-question">Як ви оцінюєте якість коду JS цього сайту?
-                                    </p>
+                                    <label class="subtitle hard-skills-box">
+                                        <span class="hard-skills-desc">
+                                            How do you rate the
+                                            quality of the JS code on this
+                                            site?
+                                        </span>
 
-                                    <label for="js-quality">How do you rate the quality of the JS code on this
-                                        site?</label>
-                                    <textarea name="js" id="js-quality"></textarea>
+                                        <textarea name="js" class="hard-skills-field"></textarea>
+                                    </label>
                                 </li>
 
                                 <li>
-                                    <p class="comments-question">Чи є у вас коментарі або побажання?
-                                    </p>
+                                    <label class="subtitle hard-skills-box">
+                                        <span class="hard-skills-desc">
+                                            Do you have any comments or suggestions?
+                                        </span>
 
-                                    <label for="comments-quality">Do you have any comments or suggestions?</label>
-                                    <textarea name="comments" id="comments-quality"></textarea>
+                                        <textarea name="comments" class="hard-skills-field"></textarea>
+                                    </label>
                                 </li>
                             </ul>
                         </fieldset>
 
-                        <fieldset class="form-contact-info">
+                        <fieldset class="feedback-contact-info fieldset-reset">
+                            <legend class="site-view-title section-title form-section-title">Please fill in the
+                                following fields so we can better
+                                understand
+                                your feedback.
+                            </legend>
+
                             <div class="reviewer-box">
-                                <p class="reviewer-title">Будь ласка, заповніть наступні поля, щоб ми могли краще
-                                    зрозуміти
-                                    ваш фідбек
-                                </p>
-                                <p class="reviewer-title">Please fill in the following fields so we can better
-                                    understand
-                                    your feedback.
-                                </p>
+                                <label class="subtitle reviewer-label">
+                                    <span class="reviewer-desc">Name</span>
 
-                                <label for="reviewer-name">Name</label>
-                                <input type="text" name="reviewer-name" id="reviewer-name" placeholder="Mango" />
+                                    <input class="reviewer-field" type="text" name="reviewer-name"
+                                        placeholder="Emily Johnson" />
+                                </label>
 
-                                <label for="reviewer-email">Email</label>
-                                <input type="email" name="reviewer-email" id="reviewer-email"
-                                    placeholder="Mango@mail.com" />
+                                <label class="subtitle reviewer-label">
+                                    <span class="reviewer-desc">Email</span>
 
-                                <label for="reviewer-phone">Phone number</label>
-                                <input type="tel" name="reviewer-phone" id="reviewer-phone" placeholder="0123456789" />
+                                    <input class="reviewer-field" type="email" name="reviewer-email"
+                                        placeholder="EmilyJohnson@mail.com" />
+                                </label>
 
-                                <label for="reviewer-job-title">Job Title</label>
-                                <input type="text" name="reviewer-job-title" id="reviewer-job-title"
-                                    placeholder="Junior" />
+                                <label class="subtitle reviewer-label">
+                                    <span class="reviewer-desc">Phone number</span>
 
-                                <label for="reviewer-company">Company</label>
-                                <input type="text" name="reviewer-company" id="reviewer-company" placeholder="WDS" />
+                                    <input class="reviewer-field" type="tel" name="reviewer-phone"
+                                        placeholder="012-345-67-89" />
+                                </label>
 
-                                <label for="reviewer-date">Date of review</label>
-                                <input type="datetime-local" name="reviewer-date" id="reviewer-date" />
+                                <label class="subtitle reviewer-label">
+                                    <span class="reviewer-desc">Job Title</span>
 
-                            </div>
+                                    <input class="reviewer-field" type="text" name="reviewer-job-title"
+                                        placeholder="IT Recruiter" />
+                                </label>
 
-                            <div>
-                                <label for="feedback-type">Feedback type</label>
+                                <label class="subtitle reviewer-label">
+                                    <span class="reviewer-desc">Company</span>
 
-                                <select name="feedback-type" id="feedback-type">
-                                    <optgroup label="perfectly">
-                                        <option value="5">😎🔥</option>
-                                        <option value="4">😎</option>
-                                    </optgroup>
+                                    <input class="reviewer-field" type="text" name="reviewer-company"
+                                        placeholder="Google" />
+                                </label>
 
-                                    <optgroup label="neutral">
-                                        <option value="3">🤔</option>
-                                    </optgroup>
+                                <label class="subtitle reviewer-label">
+                                    <span class="reviewer-desc">Will you offer me a job?</span>
 
-                                    <optgroup label="badly">
-                                        <option value="2">😏</option>
-                                        <option value="1">😏👀</option>
-                                    </optgroup>
-                                </select>
+                                    <select name="jobOffer" class="reviewer-field">
+                                        <option value="">Select an answer</option>
+                                        <option value="yes">Yes, absolutely!</option>
+                                        <option value="maybe">Maybe, need to think about it.</option>
+                                        <option value="no">Unfortunately, no.</option>
+                                    </select>
+                                </label>
                             </div>
                         </fieldset>
 
-                        <button class="button" type="submit">Send feedback</button>
+                        <button class="button feedback-submit-btn" type="submit">Send feedback</button>
                     </form>
                 </div>
             </section>

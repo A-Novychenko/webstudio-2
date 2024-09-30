@@ -30,15 +30,6 @@
   height: 100%;
 }
 
-.main-title {
-  margin-bottom: 48px;
-
-  color: var(--light-text-color);
-  font-size: 56px;
-  line-height: 1.07;
-  letter-spacing: 1.12px;
-}
-
 /* /hero-section */
 
 /* features-section */
