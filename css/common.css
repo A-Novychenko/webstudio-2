@@ -264,7 +264,6 @@ textarea {
 
 .footer-wrap {
   display: flex;
-  column-gap: 120px;
 }
 
 .footer-promo {
@@ -272,6 +271,7 @@ textarea {
   flex-direction: column;
   row-gap: 16px;
   width: 264px;
+  margin-right: 120px;
 }
 
 .footer-label {
@@ -286,8 +286,50 @@ textarea {
   font-weight: 500;
 }
 
+.footer-social {
+  margin-right: 80px;
+}
+
 .page-footer .social-links {
   column-gap: 16px;
+}
+
+.subscribe-form {
+  display: flex;
+  column-gap: 24px;
+}
+
+.subscribe-input {
+  width: 264px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid var(--light-text-color);
+
+  color: var(--light-text-color);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.48px;
+
+  background-color: var(--dark-bg-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe-input::placeholder {
+  color: var(--slate-text-color);
+}
+
+.subscribe-btn {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  padding: 8px 24px;
+  width: 165px;
+  min-width: auto;
+}
+
+.subscribe-icon {
+  flex-shrink: 0;
 }
 
 /* /page-footer */
