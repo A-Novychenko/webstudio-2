@@ -21,7 +21,7 @@
 
   --overlay-color: rgba(46, 47, 66, 0.7);
 
-  --animation: 300ms ease-in-out;
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -361,7 +361,6 @@ textarea {
 
   padding: 72px 24px 24px;
   max-width: 408px;
-  /* min-height: 584px; */
   max-height: 90%;
   overflow-y: auto;
 
@@ -401,6 +400,10 @@ textarea {
   fill: var(--light-text-color);
 }
 
+/* /backdrop and modal*/
+
+/* order form*/
+
 .order-form-title {
   display: inline-block;
   width: 100%;
@@ -414,7 +417,6 @@ textarea {
 .order-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .order-inputs-box {
@@ -444,17 +446,19 @@ textarea {
   flex-direction: column;
 
   padding: 8px 16px 8px 38px;
-  width: 360px;
+  width: 100%;
   height: 40px;
   border-radius: 4px;
   border: 1px solid var(--border-dark);
+
+  transition: border-color var(--animation), color var(--animation);
 }
 
 .form-textarea {
   display: flex;
   flex-direction: column;
   padding: 8px 16px;
-  width: 360px;
+  width: 100%;
   height: 120px;
 
   line-height: 1.17;
@@ -464,6 +468,8 @@ textarea {
   border: 1px solid var(--border-dark);
 
   resize: none;
+
+  transition: border-color var(--animation), color var(--animation);
 }
 
 .form-textarea::placeholder {
@@ -472,8 +478,9 @@ textarea {
 
 .form-input:focus,
 .form-textarea:focus {
-  outline: 1px solid var(--accent-color);
-  border-color: transparent;
+  outline: none;
+  border-color: var(--accent-color);
+
   color: var(--accent-color);
 }
 
@@ -485,11 +492,13 @@ textarea {
 
 .order-form-icon {
   position: absolute;
-  bottom: 50%;
+  top: 50%;
   left: 16px;
-  transform: translateY(50%);
+  transform: translateY(-50%);
 
   fill: currentColor;
+
+  transition: color var(--animation);
 }
 
 .form-input:focus ~ .order-form-icon {
@@ -499,7 +508,6 @@ textarea {
 .policy-label {
   display: flex;
   align-items: center;
-  column-gap: 8px;
   margin-bottom: 24px;
 
   color: var(--slate-text-color);
@@ -509,12 +517,13 @@ textarea {
 }
 
 .policy-input {
+  position: absolute;
   appearance: none;
 }
 
 .policy-checkbox {
-  display: inline-block;
   flex-shrink: 0;
+  margin-right: 8px;
 
   width: 16px;
   height: 16px;
@@ -522,11 +531,23 @@ textarea {
   border-radius: 2px;
 }
 
+.policy-checkbox-icon {
+  display: none;
+
+  fill: var(--light-text-color);
+}
+
+.policy-input:checked + .policy-checkbox > .policy-checkbox-icon {
+  display: block;
+}
+
 .policy-input:checked + .policy-checkbox {
   border: transparent;
   background-color: #404bbf;
-  background-image: url("../imgs/checkmark.svg");
-  background-origin: border-box;
+}
+
+.policy-input:focus + .policy-checkbox {
+  box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.5);
 }
 
 .policy-link {
@@ -537,7 +558,8 @@ textarea {
 }
 
 .order-submit-btn {
+  align-self: center;
   width: 169px;
 }
 
-/* /backdrop and modal*/
+/* /order form*/
