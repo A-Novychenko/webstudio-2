@@ -1,0 +1,18 @@
+.contacts {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    column-gap: 40px;
+}
+
+.contacts__link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    transition: color $animation;
+
+    &:hover,
+    &:focus {
+        color: getTextColor(accentDark);
+    }
+}

@@ -1,0 +1,28 @@
+.subscribe-form {
+    display: flex;
+    column-gap: 24px;
+}
+
+.subscribe-form__input {
+    width: 264px;
+    height: 40px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid getBorderColor(light);
+
+    color: getTextColor(light);
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.48px;
+
+    background-color: getBgColor(dark);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+    &::placeholder {
+        color: getTextColor(slate);
+    }
+}
+
+.subscribe-form__icon {
+    flex-shrink: 0;
+}

@@ -1,0 +1,38 @@
+.page-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    background-color: getBgColor(dark);
+}
+
+.page-footer__wrap {
+    display: flex;
+}
+
+.page-footer__promo-box {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    width: 264px;
+    margin-right: 120px;
+}
+
+.page-footer__label {
+    color: getTextColor(inversion);
+    font-weight: 400;
+}
+
+.page-footer__title {
+    margin-bottom: 16px;
+
+    color: getTextColor(light);
+    font-weight: 500;
+}
+
+.page-footer__social-box {
+    margin-right: 80px;
+}
+
+.page-footer__social-list {
+    column-gap: 16px;
+}

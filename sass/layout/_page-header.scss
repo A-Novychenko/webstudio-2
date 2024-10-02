@@ -1,0 +1,16 @@
+.page-header {
+    border-bottom: 1px solid getBorderColor(light);
+}
+
+.page-header__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.page-header__nav {
+    display: flex;
+    align-items: center;
+
+    color: getTextColor(secondary);
+    font-weight: 500;
+}

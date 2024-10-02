@@ -1,0 +1,40 @@
+.site-nav {
+    display: flex;
+    gap: 40px;
+    margin-left: 76px;
+}
+
+.site-nav__link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    transition: color $animation;
+
+    &:hover,
+    &:focus {
+        color: getTextColor(accentDark);
+    }
+}
+
+.site-nav__link--current {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        top: calc(100% - 3px);
+        left: 0;
+
+        content: "";
+        display: inline-block;
+        width: 100%;
+        height: 4px;
+
+        background-color: getBgColor(accentDark);
+        border-radius: 2px;
+    }
+}
+
+.site-nav__link.site-nav__link--current {
+    color: getTextColor(accentDark);
+}

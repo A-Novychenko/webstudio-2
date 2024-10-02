@@ -18,37 +18,40 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/feedback.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
     <div class="page-container">
         <header class="page-header">
             <div class="container">
-                <div class="page-header-wrap">
-                    <nav class="main-nav">
-                        <a href="./index.html" class="link logo">
-                            <span class="logo-accent">Web</span>Studio
+                <div class="page-header__wrap">
+                    <nav class="page-header__nav">
+                        <a href="./index.html" class="logo">
+                            <span class="logo__accent-text">Web</span>Studio
                         </a>
 
-                        <ul class="list site-nav">
-                            <li><a href="./index.html" class="nav-link link ">Studio</a></li>
+                        <ul class="site-nav">
+                            <li><a href="./index.html" class="site-nav__link">Studio</a></li>
 
-                            <li><a href="./index.html#portfolio" class="nav-link link">Portfolio</a></li>
+                            <li><a href="#portfolio" class="site-nav__link">Portfolio</a></li>
 
-                            <li><a href="./index.html#contacts" class="nav-link link">Contacts</a></li>
+                            <li><a href="#contacts" class="site-nav__link">Contacts</a></li>
 
-                            <li><a href="./feedback.html" class="nav-link link current">Feedback</a></li>
+                            <li><a href="./feedback.html" class="site-nav__link site-nav__link--current">Feedback</a>
+                            </li>
+
                         </ul>
                     </nav>
 
-                    <ul class="list contacts-list">
+                    <ul class="contacts">
                         <li>
                             <a href="mailto:info@devstudio.com" target="_blank"
-                                class="link contacts-link">info@devstudio.com</a>
+                                class="contacts__link">info@devstudio.com</a>
                         </li>
 
                         <li>
-                            <a href="tel:+110001111111" target="_blank" class="link contacts-link">+11 (000)
+                            <a href="tel:+110001111111" target="_blank" class="contacts__link">+11 (000)
                                 111-11-11</a>
                         </li>
                     </ul>
@@ -71,7 +74,7 @@
                     <form class="feedback-form" id="feedbackForm">
                         <fieldset class="feedback-user-experience fieldset-reset">
                             <fieldset class="fieldset-reset fieldset-view">
-                                <legend class="site-view-title section-title form-section-title"> How do you rate the
+                                <legend class="site-view-title title form-section-title"> How do you rate the
                                     overall appearance of the website?
                                 </legend>
 
@@ -124,7 +127,7 @@
                             </fieldset>
 
                             <fieldset class="fieldset-reset fieldset-view">
-                                <legend class="functionality-question section-title form-section-title">How do you rate
+                                <legend class="functionality-question title form-section-title">How do you rate
                                     the correctness of the site’s functionality?
                                 </legend>
 
@@ -187,7 +190,7 @@
                             </fieldset>
 
                             <fieldset class="fieldset-reset fieldset-view">
-                                <legend class="browsers section-title form-section-title">Select the browsers in which
+                                <legend class="browsers title form-section-title">Select the browsers in which
                                     you tested the site?
                                 </legend>
 
@@ -274,7 +277,7 @@
                             </fieldset>
 
                             <fieldset class="fieldset-reset fieldset-view">
-                                <legend class="section-title form-section-title">How would you rate your overall
+                                <legend class="title form-section-title">How would you rate your overall
                                     impression of the site?
                                 </legend>
 
@@ -340,7 +343,7 @@
                         </fieldset>
 
                         <fieldset class="feedback-technical-experience fieldset-reset">
-                            <legend class="site-view-title section-title form-section-title">Please evaluate my
+                            <legend class="site-view-title title form-section-title">Please evaluate my
                                 technical abilities
                             </legend>
 
@@ -388,7 +391,7 @@
                         </fieldset>
 
                         <fieldset class="feedback-contact-info fieldset-reset">
-                            <legend class="site-view-title section-title form-section-title">Please fill in the
+                            <legend class="site-view-title title form-section-title">Please fill in the
                                 following fields so we can better
                                 understand
                                 your feedback.
@@ -451,62 +454,66 @@
 
         <footer class="page-footer">
             <div class="container">
-                <div class="footer-wrap">
-                    <div class="footer-promo">
-                        <a href="./index.html" class="link logo logo-inversion">
-                            <span class="logo-accent">Web</span>Studio
+                <div class="page-footer__wrap">
+                    <div class="page-footer__promo-box">
+                        <a href="./index.html" class="logo logo--inversion">
+                            <span class="logo__accent-text">Web</span>Studio
                         </a>
 
-                        <b class="footer-label">Increase the flow of customers and sales for your business with digital
+                        <b class="page-footer__label">Increase the flow of customers and sales for your business with
+                            digital
                             marketing
                             &#38; growth
                             solutions.
                         </b>
                     </div>
 
-                    <div class="footer-social">
-                        <p class="footer-subtitle">Social media</p>
+                    <div class="page-footer__social-box">
+                        <p class="page-footer__title">Social media</p>
 
-                        <ul class="social-links list">
-                            <li class="social-item">
-                                <a href="https://www.instagram.com/" class="social-link" aria-label="Go to Instagram"
-                                    target="_blank" rel="noopener nofollow" title="Go to Instagram">
+                        <ul class="social-list page-footer__social-list">
+                            <li>
+                                <a href="https://www.instagram.com/" class="social-list__link"
+                                    aria-label="Go to Instagram" target="_blank" rel="noopener nofollow"
+                                    title="Go to Instagram">
                                     <span class="visually-hidden">Go to Instagram</span>
 
-                                    <svg width="24" height="24" class="social-icon">
+                                    <svg width="24" height="24" class="social-list__icon">
                                         <use href="./imgs/icons.svg#icon-instagram"></use>
                                     </svg>
                                 </a>
                             </li>
 
-                            <li class="social-item">
-                                <a href="https://x.com/" class="social-link" aria-label="Go to Twitter" target="_blank"
-                                    rel="noopener nofollow" title="Go to Twitter">
+                            <li>
+                                <a href="https://x.com/" class="social-list__link" aria-label="Go to Twitter"
+                                    target="_blank" rel="noopener nofollow" title="Go to Twitter">
                                     <span class="visually-hidden">Go to Twitter</span>
 
-                                    <svg width="24" height="24" class="social-icon">
+                                    <svg width="24" height="24" class="social-list__icon">
                                         <use href="./imgs/icons.svg#icon-twitter"></use>
                                     </svg>
                                 </a>
                             </li>
 
-                            <li class="social-item">
-                                <a href="https://www.facebook.com/" class="social-link" aria-label="Go to Facebook"
-                                    target="_blank" rel="noopener nofollow" title="Go to Facebook">
+                            <li>
+                                <a href="https://www.facebook.com/" class="social-list__link"
+                                    aria-label="Go to Facebook" target="_blank" rel="noopener nofollow"
+                                    title="Go to Facebook">
                                     <span class="visually-hidden">Go to Facebook</span>
 
-                                    <svg width="24" height="24" class="social-icon">
+                                    <svg width="24" height="24" class="social-list__icon">
                                         <use href="./imgs/icons.svg#icon-facebook"></use>
                                     </svg>
                                 </a>
                             </li>
 
-                            <li class="social-item">
-                                <a href="https://www.linkedin.com/" class="social-link" aria-label="Go to Linkedin"
-                                    target="_blank" rel="noopener nofollow" title="Go to Linkedin">
+                            <li>
+                                <a href="https://www.linkedin.com/" class="social-list__link"
+                                    aria-label="Go to Linkedin" target="_blank" rel="noopener nofollow"
+                                    title="Go to Linkedin">
                                     <span class="visually-hidden">Go to Linkedin</span>
 
-                                    <svg width="24" height="24" class="social-icon">
+                                    <svg width="24" height="24" class="social-list__icon">
                                         <use href="./imgs/icons.svg#icon-linkedin"></use>
                                     </svg>
                                 </a>
@@ -514,14 +521,14 @@
                         </ul>
                     </div>
 
-                    <div class="footer-subscribe">
-                        <p class="footer-subtitle">Subscribe</p>
+                    <div class="page-footer__subscribe-box">
+                        <p class="page-footer__title">Subscribe</p>
 
                         <form name="subscribe-form" class="subscribe-form">
-                            <input type="email" class="subscribe-input" placeholder="E-mail">
+                            <input type="email" class="subscribe-form__input" placeholder="E-mail">
 
-                            <button type="submit" class="button subscribe-btn">Subscribe
-                                <svg class="subscribe-icon" width="24" height="24">
+                            <button type="submit" class="button subscribe-form__button">Subscribe
+                                <svg class="subscribe-form__icon" width="24" height="24">
                                     <use href="./imgs/icons.svg#icon-arrow"></use>
                                 </svg>
                             </button>
