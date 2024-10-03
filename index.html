@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Welcome to our web studio, where creativity meets functionality. We specialize in crafting stunning websites, user-friendly interfaces, and effective digital solutions for businesses of all sizes. Let us bring your ideas to life and help you make a powerful impact online. Get in touch with us today!">
+    <link rel="icon shortcut" type="image/png" href="./imgs/favicon.png">
 
     <title>WEBSTUDIO</title>
 
@@ -16,9 +17,8 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="./css/mainCss.css">
+
 </head>
 
 <body>
@@ -37,10 +37,6 @@
                             <li><a href="#portfolio" class="site-nav__link">Portfolio</a></li>
 
                             <li><a href="#contacts" class="site-nav__link">Contacts</a></li>
-
-                            <li><a href="./feedback.html" class="site-nav__link">Feedback</a>
-                            </li>
-
                         </ul>
                     </nav>
 
@@ -60,8 +56,8 @@
         </header>
 
         <main>
-            <section class="section hero-section" id="contacts">
-                <div class="container hero-content">
+            <section class="section hero" id="contacts">
+                <div class="container hero__content">
                     <h1 class="main-title">Effective Solutions<br />
                         for Your Business</h1>
 
@@ -69,13 +65,13 @@
                 </div>
             </section>
 
-            <section class="section features-section">
+            <section class="section features">
                 <div class="container">
                     <h2 class="visually-hidden">Features</h2>
 
-                    <ul class="features-list list">
-                        <li class="features-item features-icon-antenna">
-                            <div class="features-icon-wrap">
+                    <ul class="features__list">
+                        <li class="features__item">
+                            <div class="features__icon-wrap">
                                 <svg width="64" height="64" aria-label="antenna icon">
                                     <use href="./imgs/icons.svg#icon-antenna"></use>
                                 </svg>
@@ -88,8 +84,8 @@
                             </p>
                         </li>
 
-                        <li class="features-item features-icon-clock">
-                            <div class="features-icon-wrap">
+                        <li class="features__item">
+                            <div class="features__icon-wrap">
                                 <svg width="64" height="64" aria-label="clock icon">
                                     <use href="./imgs/icons.svg#icon-clock"></use>
                                 </svg>
@@ -103,8 +99,8 @@
                             </p>
                         </li>
 
-                        <li class="features-item features-icon-diagram">
-                            <div class="features-icon-wrap">
+                        <li class="features__item">
+                            <div class="features__icon-wrap">
                                 <svg width="64" height="64" aria-label="diagram icon">
                                     <use href="./imgs/icons.svg#icon-diagram"></use>
                                 </svg>
@@ -118,8 +114,8 @@
                             </p>
                         </li>
 
-                        <li class="features-item features-icon-astronaut">
-                            <div class="features-icon-wrap">
+                        <li class="features__item">
+                            <div class="features__icon-wrap">
                                 <svg width="64" height="64" aria-label="astronaut icon">
                                     <use href="./imgs/icons.svg#icon-astronaut"></use>
                                 </svg>
@@ -136,21 +132,21 @@
                 </div>
             </section>
 
-            <section class="section team-section">
+            <section class="section team">
                 <div class="container">
                     <h2 class="title">Our Team</h2>
 
-                    <ul class="list team-list">
-                        <li class="team-item">
-                            <div class="team-photo-wrap">
-                                <img class="team-photo" src="./imgs/team/mark.webp" alt="Mark Guerrero" width="264"
+                    <ul class="team__list">
+                        <li class="team__item">
+                            <div class="team__photo-wrap">
+                                <img class="team__photo" src="./imgs/team/mark.webp" alt="Mark Guerrero" width="264"
                                     height="260">
                             </div>
 
-                            <div class="team-text-box">
+                            <div class="team__text-box">
                                 <h3 class="subtitle">Mark Guerrero</h3>
 
-                                <p class="team-role">Product Designer</p>
+                                <p class="team__role">Product Designer</p>
 
                                 <ul class="social-list">
                                     <li>
@@ -203,16 +199,16 @@
                             </div>
                         </li>
 
-                        <li class="team-item">
-                            <div class="team-photo-wrap">
-                                <img class="team-photo" src="./imgs/team/tom.webp" alt="Tom Ford" width="264"
+                        <li class="team__item">
+                            <div class="team__photo-wrap">
+                                <img class="team__photo" src="./imgs/team/tom.webp" alt="Tom Ford" width="264"
                                     height="260">
                             </div>
 
-                            <div class="team-text-box">
+                            <div class="team__text-box">
                                 <h3 class="subtitle">Tom Ford</h3>
 
-                                <p class="team-role">Frontend Developer</p>
+                                <p class="team__role">Frontend Developer</p>
 
                                 <ul class="social-list">
                                     <li>
@@ -265,16 +261,16 @@
                             </div>
                         </li>
 
-                        <li class="team-item">
-                            <div class="team-photo-wrap">
-                                <img class="team-photo" src="./imgs/team/camila.webp" alt="Camila Garcia" width="264"
+                        <li class="team__item">
+                            <div class="team__photo-wrap">
+                                <img class="team__photo" src="./imgs/team/camila.webp" alt="Camila Garcia" width="264"
                                     height="260">
                             </div>
 
-                            <div class="team-text-box">
+                            <div class="team__text-box">
                                 <h3 class="subtitle">Camila Garcia</h3>
 
-                                <p class="team-role">Marketing</p>
+                                <p class="team__role">Marketing</p>
 
                                 <ul class="social-list">
                                     <li>
@@ -327,16 +323,16 @@
                             </div>
                         </li>
 
-                        <li class="team-item">
-                            <div class="team-photo-wrap">
-                                <img class="team-photo" src="./imgs/team/daniel.webp" alt="Daniel Wilson" width="264"
+                        <li class="team__item">
+                            <div class="team__photo-wrap">
+                                <img class="team__photo" src="./imgs/team/daniel.webp" alt="Daniel Wilson" width="264"
                                     height="260">
                             </div>
 
-                            <div class="team-text-box">
+                            <div class="team__text-box">
                                 <h3 class="subtitle">Daniel Wilson</h3>
 
-                                <p class="team-role">UI Designer</p>
+                                <p class="team__role">UI Designer</p>
 
                                 <ul class="social-list">
                                     <li>
@@ -392,26 +388,26 @@
                 </div>
             </section>
 
-            <section class="section portfolio-section" id="portfolio">
+            <section class="section portfolio" id="portfolio">
                 <div class="container">
                     <h2 class="title">Our Portfolio</h2>
 
-                    <ul class="portfolio-gallery list">
-                        <li class="portfolio-item">
-                            <a href="" class="portfolio-card link">
-                                <div class="portfolio-thumb">
+                    <ul class="portfolio__gallery">
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__card">
+                                <div class="portfolio__thumb">
                                     <img src="./imgs/portfolio/banking.webp" alt="Screens banking app" width="360"
                                         height="300">
 
-                                    <div class="portfolio-overlay">
-                                        <p class="portfolio-descr">14 Stylish and User-Friendly App Design Concepts ·
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__desc">14 Stylish and User-Friendly App Design Concepts ·
                                             Task
                                             Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                             Cloud Storage App</p>
                                     </div>
                                 </div>
 
-                                <div class="portfolio-text-box">
+                                <div class="portfolio__text-box">
                                     <h3 class="subtitle">Banking App</h3>
 
                                     <p>App</p>
@@ -419,21 +415,21 @@
                             </a>
                         </li>
 
-                        <li class="portfolio-item">
-                            <a href="" class="portfolio-card link">
-                                <div class="portfolio-thumb">
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__card">
+                                <div class="portfolio__thumb">
                                     <img src="./imgs/portfolio/payment.webp" alt="QR code reading by smartphone"
                                         width="360" height="300">
 
-                                    <div class="portfolio-overlay">
-                                        <p class="portfolio-descr">14 Stylish and User-Friendly App Design Concepts ·
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__desc">14 Stylish and User-Friendly App Design Concepts ·
                                             Task
                                             Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                             Cloud Storage App</p>
                                     </div>
                                 </div>
 
-                                <div class="portfolio-text-box">
+                                <div class="portfolio__text-box">
                                     <h3 class="subtitle">Cashless Payment</h3>
 
                                     <p>Marketing</p>
@@ -441,22 +437,22 @@
                             </a>
                         </li>
 
-                        <li class="portfolio-item">
-                            <a href="" class="portfolio-card link">
-                                <div class="portfolio-thumb">
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__card">
+                                <div class="portfolio__thumb">
                                     <img src="./imgs/portfolio/meditation.webp"
                                         alt="the multi-colored site is displayed on a smartphone and a laptop"
                                         width="360" height="300">
 
-                                    <div class="portfolio-overlay">
-                                        <p class="portfolio-descr">14 Stylish and User-Friendly App Design Concepts ·
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__desc">14 Stylish and User-Friendly App Design Concepts ·
                                             Task
                                             Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                             Cloud Storage App</p>
                                     </div>
                                 </div>
 
-                                <div class="portfolio-text-box">
+                                <div class="portfolio__text-box">
                                     <h3 class="subtitle">Meditation App</h3>
 
                                     <p>App</p>
@@ -464,21 +460,21 @@
                             </a>
                         </li>
 
-                        <li class="portfolio-item">
-                            <a href="" class="portfolio-card link">
-                                <div class="portfolio-thumb">
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__card">
+                                <div class="portfolio__thumb">
                                     <img src="./imgs/portfolio/taxi.webp" alt="interior of a taxi car" width="360"
                                         height="300">
 
-                                    <div class="portfolio-overlay">
-                                        <p class="portfolio-descr">14 Stylish and User-Friendly App Design Concepts ·
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__desc">14 Stylish and User-Friendly App Design Concepts ·
                                             Task
                                             Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                             Cloud Storage App</p>
                                     </div>
                                 </div>
 
-                                <div class="portfolio-text-box">
+                                <div class="portfolio__text-box">
                                     <h3 class="subtitle">Taxi Service</h3>
 
                                     <p>Marketing</p>
@@ -486,22 +482,22 @@
                             </a>
                         </li>
 
-                        <li class="portfolio-item">
-                            <a href="" class="portfolio-card link">
-                                <div class="portfolio-thumb">
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__card">
+                                <div class="portfolio__thumb">
                                     <img src="./imgs/portfolio/screen.webp"
                                         alt="on the left is a smartphone and on the right are screens with the image of abstraction"
                                         width="360" height="300">
 
-                                    <div class="portfolio-overlay">
-                                        <p class="portfolio-descr">14 Stylish and User-Friendly App Design Concepts ·
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__desc">14 Stylish and User-Friendly App Design Concepts ·
                                             Task
                                             Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                             Cloud Storage App</p>
                                     </div>
                                 </div>
 
-                                <div class="portfolio-text-box">
+                                <div class="portfolio__text-box">
                                     <h3 class="subtitle">Screen Illustrations</h3>
 
                                     <p>Design</p>
@@ -509,21 +505,21 @@
                             </a>
                         </li>
 
-                        <li class="portfolio-item">
-                            <a href="" class="portfolio-card link">
-                                <div class="portfolio-thumb">
+                        <li class="portfolio__item">
+                            <a href="" class="portfolio__card">
+                                <div class="portfolio__thumb">
                                     <img src="./imgs/portfolio/courses.webp" alt="girl with phone and headphones"
                                         width="360" height="300">
 
-                                    <div class="portfolio-overlay">
-                                        <p class="portfolio-descr">14 Stylish and User-Friendly App Design Concepts ·
+                                    <div class="portfolio__overlay">
+                                        <p class="portfolio__desc">14 Stylish and User-Friendly App Design Concepts ·
                                             Task
                                             Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App ·
                                             Cloud Storage App</p>
                                     </div>
                                 </div>
 
-                                <div class="portfolio-text-box">
+                                <div class="portfolio__text-box">
                                     <h3 class="subtitle">Online Courses</h3>
 
                                     <p>Marketing</p>
@@ -610,7 +606,7 @@
                         <form name="subscribe-form" class="subscribe-form">
                             <input type="email" class="subscribe-form__input" placeholder="E-mail">
 
-                            <button type="submit" class="button subscribe-form__button">Subscribe
+                            <button type="submit" class="subscribe-form__button">Subscribe
                                 <svg class="subscribe-form__icon" width="24" height="24">
                                     <use href="./imgs/icons.svg#icon-arrow"></use>
                                 </svg>
@@ -625,7 +621,7 @@
 
     <div class="backdrop" data-backdrop>
         <div class="modal">
-            <button class="close-modal-btn" aria-label="Close modal" data-close-modal type="button">
+            <button class="modal__close-btn" aria-label="Close modal" data-close-modal type="button">
                 <span class="visually-hidden">X</span>
 
                 <svg width="8" height="8">
@@ -633,66 +629,66 @@
                 </svg>
             </button>
 
-            <b class="order-form-title">Leave your contacts and we will call you back</b>
-
             <form class="order-form" name="order-form">
-                <div class="order-inputs-box">
-                    <label class="form-label-box">
-                        <span class="form-label">Name</span>
+                <b class="order-form__title">Leave your contacts and we will call you back</b>
 
-                        <span class="input-wrap">
-                            <input type="text" name="order-name" class="form-input">
+                <div class="order-form__inputs-box">
+                    <label class="order-form__label">
+                        <span class="order-form__name">Name</span>
 
-                            <svg class="order-form-icon" width="12" height="12">
+                        <span class="order-form__input-wrap">
+                            <input type="text" name="order-name" class="order-form__input">
+
+                            <svg class="order-form__icon" width="12" height="12">
                                 <use href="./imgs/icons.svg#icon-person"></use>
                             </svg>
                         </span>
                     </label>
 
-                    <label class="form-label-box">
-                        <span class="form-label">Phone</span>
+                    <label class="order-form__label">
+                        <span class="order-form__name">Phone</span>
 
-                        <span class="input-wrap">
-                            <input type="tel" name="order-phone" class="form-input">
+                        <span class="order-form__input-wrap">
+                            <input type="tel" name="order-phone" class="order-form__input">
 
-                            <svg class="order-form-icon" width="13" height="13">
+                            <svg class="order-form__icon" width="13" height="13">
                                 <use href="./imgs/icons.svg#icon-phone"></use>
                             </svg>
                         </span>
                     </label>
 
-                    <label class="form-label-box">
-                        <span class="form-label">Email</span>
+                    <label class="order-form__label">
+                        <span class="order-form__name">Email</span>
 
-                        <span class="input-wrap">
-                            <input type="email" name="order-email" class="form-input">
+                        <span class="order-form__input-wrap">
+                            <input type="email" name="order-email" class="order-form__input">
 
-                            <svg class="order-form-icon" width="15" height="12">
+                            <svg class="order-form__icon" width="12" height="12">
                                 <use href="./imgs/icons.svg#icon-email"></use>
                             </svg>
                         </span>
                     </label>
 
-                    <label class="form-label-box">
-                        <span class="form-label">Comment</span>
+                    <label class="order-form__label">
+                        <span class="order-form__name">Comment</span>
 
-                        <textarea name="order-comment" class="form-textarea" placeholder="Text input"></textarea>
+                        <textarea name="order-comment" class="order-form__textarea" placeholder="Text input"></textarea>
                     </label>
                 </div>
 
-                <label class="policy-label">
-                    <input type="checkbox" name="policy" class="policy-input">
+                <label class="order-form__policy-label">
+                    <input type="checkbox" name="policy" class="order-form__policy-input">
 
-                    <svg class="policy-checkbox" width="16" height="16">
-                        <use class="policy-checkbox-icon" href="./imgs/icons.svg#icon-checkmark"></use>
+                    <svg class="order-form__policy-checkbox" width="16" height="16">
+                        <use class="order-form__policy-icon" href="./imgs/icons.svg#icon-checkmark"></use>
                     </svg>
 
                     I accept the terms and conditions of the&nbsp;<a href="./index.html"
-                        class="policy-link link">Privacy
+                        class="order-form__policy-link">Privacy
                         Policy</a>
                 </label>
 
-                <button type="submit" class="order-submit-btn button">Send</button>
+                <button type="submit" class="order-form__button">Send</button>
             </form>
         </div>
     </div>

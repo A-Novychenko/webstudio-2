@@ -4,6 +4,7 @@ $textColors: (
     "light": #ffffff,
     "inversion": #f4f4fd,
     "slate": #8e8f99,
+    "dark": rgba(46, 47, 66, 0.4),
     "accent": #4d5ae5,
     "accentDark": #404bbf,
     "accentSocials": #31d0aa,
@@ -16,8 +17,8 @@ $bgColors: (
     "dark": #2e2f42,
     "backdrop": rgba(46, 47, 66, 0.4),
     "modal": #fcfcfc,
-    "accent": #4d5ae5,
     "overlay": rgba(46, 47, 66, 0.7),
+    "accent": #4d5ae5,
     "accentDark": #404bbf,
     "accentSocials": #31d0aa,
     "outline": rgb(0, 84, 217),
@@ -27,6 +28,8 @@ $borderColors: (
     "light": #e7e9fc,
     "slate": #8e8f99,
     "dark": rgba(46, 47, 66, 0.4),
+    "accent": #4d5ae5,
+    "accentDark": #404bbf,
 );
 
 

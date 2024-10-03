@@ -28,3 +28,7 @@
 .social-list__icon {
     fill: currentColor;
 }
+
+.team__item:hover .social-list__link {
+    background-color: getBgColor(accentDark);
+}

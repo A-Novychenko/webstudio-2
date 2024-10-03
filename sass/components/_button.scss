@@ -20,10 +20,19 @@
 }
 
 .subscribe-form__button {
+    @extend .button;
+
     display: flex;
     align-items: center;
     column-gap: 16px;
     padding: 8px 24px;
     width: 165px;
     min-width: auto;
+}
+
+.order-form__button {
+    @extend .button;
+
+    align-self: center;
+    width: 169px;
 }

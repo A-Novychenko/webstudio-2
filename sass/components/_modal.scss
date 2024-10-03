@@ -1,0 +1,48 @@
+.backdrop.is-open .modal {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    padding: 72px 24px 24px;
+    max-width: 408px;
+    max-height: 90%;
+    overflow-y: auto;
+
+    background-color: getBgColor(modal);
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+
+    transform: translate(-50%, -50%) scale(1.25);
+    transition: transform $animation;
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    border: 1px solid getBorderColor(slate);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    transition: border-color $animation, background-color $animation,
+        fill $animation;
+
+    &:hover,
+    &:focus {
+        border-color: transparent;
+        background-color: getBgColor(accentDark);
+        fill: getTextColor(light);
+    }
+}

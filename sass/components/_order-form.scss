@@ -1,0 +1,154 @@
+.order-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-form__title {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 16px;
+
+    color: getTextColor(secondary);
+    text-align: center;
+    font-weight: 500;
+}
+
+.order-form__inputs-box {
+    margin-bottom: 16px;
+}
+
+.order-form__label {
+    display: block;
+
+    color: getTextColor(slate);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
+
+
+
+.order-form__name {
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.order-form__input-wrap {
+    position: relative;
+
+    display: block;
+}
+
+%order-form__input-field {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+
+    border-radius: 4px;
+    border: 1px solid getBorderColor(dark);
+
+    transition: border-color $animation, color $animation;
+
+    &:focus,
+    &:focus {
+        outline: none;
+        border-color: getBorderColor(accent);
+
+        color: getTextColor(accent);
+    }
+}
+
+.order-form__input {
+    @extend %order-form__input-field;
+
+    padding: 8px 16px 8px 38px;
+    height: 40px;
+}
+
+.order-form__textarea {
+    @extend %order-form__input-field;
+
+    padding: 8px 16px;
+    height: 120px;
+
+    resize: none;
+
+    &::placeholder {
+        color: getTextColor(dark);
+    }
+}
+
+.order-form__icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+
+    fill: currentColor;
+
+    transition: color $animation;
+}
+
+.order-form__input:focus~.order-form__icon {
+    color: getTextColor(accent);
+}
+
+.order-form__policy-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+
+    color: getTextColor(slate);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.48px;
+}
+
+.order-form__policy-input {
+    position: absolute;
+    appearance: none;
+}
+
+.order-form__policy-checkbox {
+    flex-shrink: 0;
+    margin-right: 8px;
+
+    width: 16px;
+    height: 16px;
+    border: 1px solid getBorderColor(dark);
+    border-radius: 2px;
+}
+
+.order-form__policy-icon {
+    display: none;
+
+    fill: getTextColor(light);
+}
+
+.order-form__policy-input:checked+.order-form__policy-checkbox>.order-form__policy-icon {
+    display: block;
+}
+
+.order-form__policy-input:checked+.order-form__policy-checkbox {
+    border: transparent;
+
+    background-color: getBgColor(accentDark);
+}
+
+.order-form__policy-input:focus+.order-form__policy-checkbox {
+    box-shadow: 0 0 0 2px rgba(0, 0, 255, 0.5);
+}
+
+.order-form__policy-link {
+    color: getTextColor(accent);
+    font-size: 12px;
+    line-height: 1.33;
+    text-decoration-line: underline;
+}
