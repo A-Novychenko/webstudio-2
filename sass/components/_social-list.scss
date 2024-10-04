@@ -18,6 +18,10 @@
     background-color: getBgColor(accent);
 
     transition: background-color $animation;
+
+    .team__item:hover & {
+        background-color: getBgColor(accentDark);
+    }
 }
 
 .social-list a.social-list__link:hover,
@@ -27,8 +31,4 @@
 
 .social-list__icon {
     fill: currentColor;
-}
-
-.team__item:hover .social-list__link {
-    background-color: getBgColor(accentDark);
 }

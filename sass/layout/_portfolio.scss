@@ -40,10 +40,10 @@
 
     transform: translateY(100%);
     transition: transform $animation;
-}
 
-.portfolio__card:hover .portfolio__overlay {
-    transform: translateY(0);
+    .portfolio__card:hover & {
+        transform: translateY(0);
+    }
 }
 
 .portfolio__desc {

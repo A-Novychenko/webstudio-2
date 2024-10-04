@@ -1,8 +1,8 @@
-.backdrop.is-open .modal {
-    transform: translate(-50%, -50%) scale(1);
-}
-
 .modal {
+    .backdrop.is-open & {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -15,7 +15,8 @@
     background-color: getBgColor(modal);
     border-radius: 4px;
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
-        0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 
     transform: translate(-50%, -50%) scale(1.25);
     transition: transform $animation;
