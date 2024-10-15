@@ -5,6 +5,13 @@
 .page-header__wrap {
     display: flex;
     align-items: center;
+
+
+    @media screen and (max-width: 767px) {
+        justify-content: space-between;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
 }
 
 .page-header__nav {
