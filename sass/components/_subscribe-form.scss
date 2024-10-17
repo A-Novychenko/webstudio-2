@@ -1,6 +1,18 @@
 .subscribe-form {
     display: flex;
-    column-gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        gap: 24px;
+        margin-right: 43px;
+    }
+
+    @media screen and (min-width: 1158px) {
+        margin-right: 0;
+    }
 }
 
 .subscribe-form__input {

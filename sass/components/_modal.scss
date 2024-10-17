@@ -7,8 +7,9 @@
     top: 50%;
     left: 50%;
 
-    padding: 72px 24px 24px;
+    padding: 72px 16px 24px;
     max-width: 408px;
+    width: 288px;
     max-height: 90%;
     overflow-y: auto;
 
@@ -20,6 +21,11 @@
 
     transform: translate(-50%, -50%) scale(1.25);
     transition: transform $animation;
+
+    @media screen and (min-width: 768px) {
+        width: 408px;
+        padding: 72px 24px 24px;
+    }
 }
 
 .modal__close-btn {
