@@ -52,16 +52,16 @@
                         </li>
                     </ul>
 
-                    <button type="button" class="mobile-menu__open-menu">
+                    <button type="button" class="mobile-menu__open-menu" data-open-menu>
                         <svg class="mobile-menu__open-icon" width="24" height="24">
                             <use href="./imgs/icons.svg#icon-menu"></use>
                         </svg>
                     </button>
                 </div>
 
-                <div class="mobile-menu">
+                <div class="mobile-menu" data-menu>
                     <div class="container">
-                        <button class="modal__close-btn" aria-label="Close modal" data-close-modal type="button">
+                        <button class="modal__close-btn" aria-label="Close modal" data-close-menu type="button">
                             <span class="visually-hidden">X</span>
 
                             <svg width="8" height="8">
@@ -69,76 +69,80 @@
                             </svg>
                         </button>
 
-                        <ul class="mobile-menu__nav-list">
-                            <li><a href="./index.html" class="mobile-menu__nav-link">Studio</a></li>
+                        <div class="mobile-menu__wrap">
+                            <ul class="mobile-menu__nav-list">
+                                <li><a href="./index.html"
+                                        class="mobile-menu__nav-link mobile-menu__nav-link--current">Studio</a></li>
 
-                            <li><a href="#portfolio" class="mobile-menu__nav-link">Portfolio</a></li>
+                                <li><a href="#portfolio" class="mobile-menu__nav-link">Portfolio</a></li>
 
-                            <li><a href="#contacts" class="mobile-menu__nav-link">Contacts</a></li>
-                        </ul>
-
-                        <div>
-                            <ul class="mobile-menu__contacts-list">
-                                <li>
-                                    <a href="mailto:info@devstudio.com" target="_blank"
-                                        class="mobile-menu__contacts-link">info@devstudio.com</a>
-                                </li>
-
-                                <li>
-                                    <a href="tel:+110001111111" target="_blank" class="mobile-menu__contacts-link">+11
-                                        (000)
-                                        111-11-11</a>
-                                </li>
+                                <li><a href="#contacts" class="mobile-menu__nav-link">Contacts</a></li>
                             </ul>
 
-                            <ul class="social-list">
-                                <li>
-                                    <a href="https://www.instagram.com/" class="social-list__link"
-                                        aria-label="Go to Instagram" target="_blank" rel="noopener nofollow"
-                                        title="Go to Instagram">
-                                        <span class="visually-hidden">Go to Instagram</span>
+                            <div>
+                                <ul class="mobile-menu__contacts-list">
+                                    <li class="mobile-menu__contacts-item mobile-menu__contacts-item--accent">
+                                        <a href="tel:+110001111111" target="_blank"
+                                            class="mobile-menu__contacts-link">+11
+                                            (000)
+                                            111-11-11</a>
+                                    </li>
 
-                                        <svg width="16" height="16" class="social-list__icon">
-                                            <use href="./imgs/icons.svg#icon-instagram"></use>
-                                        </svg>
-                                    </a>
-                                </li>
+                                    <li class="mobile-menu__contacts-item">
+                                        <a href="mailto:info@devstudio.com" target="_blank"
+                                            class="mobile-menu__contacts-link">info@devstudio.com</a>
+                                    </li>
+                                </ul>
 
-                                <li>
-                                    <a href="https://x.com/" class="social-list__link" aria-label="Go to Twitter"
-                                        target="_blank" rel="noopener nofollow" title="Go to Twitter">
-                                        <span class="visually-hidden">Go to Twitter</span>
+                                <ul class="social-list social-list--mobile">
+                                    <li>
+                                        <a href="https://www.instagram.com/" class="social-list__link"
+                                            aria-label="Go to Instagram" target="_blank" rel="noopener nofollow"
+                                            title="Go to Instagram">
+                                            <span class="visually-hidden">Go to Instagram</span>
 
-                                        <svg width="16" height="16" class="social-list__icon">
-                                            <use href="./imgs/icons.svg#icon-twitter"></use>
-                                        </svg>
-                                    </a>
-                                </li>
+                                            <svg width="16" height="16" class="social-list__icon">
+                                                <use href="./imgs/icons.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
 
-                                <li>
-                                    <a href="https://www.facebook.com/" class="social-list__link"
-                                        aria-label="Go to Facebook" target="_blank" rel="noopener nofollow"
-                                        title="Go to Facebook">
-                                        <span class="visually-hidden">Go to Facebook</span>
+                                    <li>
+                                        <a href="https://x.com/" class="social-list__link" aria-label="Go to Twitter"
+                                            target="_blank" rel="noopener nofollow" title="Go to Twitter">
+                                            <span class="visually-hidden">Go to Twitter</span>
 
-                                        <svg width="16" height="16" class="social-list__icon">
-                                            <use href="./imgs/icons.svg#icon-facebook"></use>
-                                        </svg>
-                                    </a>
-                                </li>
+                                            <svg width="16" height="16" class="social-list__icon">
+                                                <use href="./imgs/icons.svg#icon-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
 
-                                <li>
-                                    <a href="https://www.linkedin.com/" class="social-list__link"
-                                        aria-label="Go to Linkedin" target="_blank" rel="noopener nofollow"
-                                        title="Go to Linkedin">
-                                        <span class="visually-hidden">Go to Linkedin</span>
+                                    <li>
+                                        <a href="https://www.facebook.com/" class="social-list__link"
+                                            aria-label="Go to Facebook" target="_blank" rel="noopener nofollow"
+                                            title="Go to Facebook">
+                                            <span class="visually-hidden">Go to Facebook</span>
 
-                                        <svg width="16" height="16" class="social-list__icon">
-                                            <use href="./imgs/icons.svg#icon-linkedin"></use>
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
+                                            <svg width="16" height="16" class="social-list__icon">
+                                                <use href="./imgs/icons.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="https://www.linkedin.com/" class="social-list__link"
+                                            aria-label="Go to Linkedin" target="_blank" rel="noopener nofollow"
+                                            title="Go to Linkedin">
+                                            <span class="visually-hidden">Go to Linkedin</span>
+
+                                            <svg width="16" height="16" class="social-list__icon">
+                                                <use href="./imgs/icons.svg#icon-linkedin"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -169,7 +173,7 @@
 
                             <h3 class="subtitle">Strategy</h3>
 
-                            <p>Our goal is to identify the business
+                            <p class="features__text">Our goal is to identify the business
                                 problem to walk away with the perfect and creative solution.
                             </p>
                         </li>
@@ -183,7 +187,8 @@
 
                             <h3 class="subtitle">Punctuality</h3>
 
-                            <p>Bring the key message to the brand's audience for the best price within the shortest
+                            <p class="features__text">Bring the key message to the brand's audience for the best price
+                                within the shortest
                                 possible
                                 time.
                             </p>
@@ -198,7 +203,8 @@
 
                             <h3 class="subtitle">Diligence</h3>
 
-                            <p>Research and confirm brands that present the strongest digital growth opportunities and
+                            <p class="features__text">Research and confirm brands that present the strongest digital
+                                growth opportunities and
                                 minimize
                                 risk.
                             </p>
@@ -213,7 +219,8 @@
 
                             <h3 class="subtitle">Technologies</h3>
 
-                            <p>Design practice focused on digital experiences. We bring forth a deep passion for
+                            <p class="features__text">Design practice focused on digital experiences. We bring forth a
+                                deep passion for
                                 problem-solving.
                             </p>
                         </li>
@@ -784,6 +791,7 @@
         </div>
     </div>
 
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/order-form.js"></script>
 </body>

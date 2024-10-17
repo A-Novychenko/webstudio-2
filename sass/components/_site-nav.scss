@@ -1,7 +1,11 @@
 .site-nav {
     display: flex;
     gap: 40px;
-    margin-left: 76px;
+    margin-left: 120px;
+
+    @media screen and (min-width: 1158px) {
+        margin-left: 76px;
+    }
 }
 
 .site-nav--mobile-hidden {

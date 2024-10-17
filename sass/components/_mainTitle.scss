@@ -1,8 +1,20 @@
 .main-title {
-    margin-bottom: 48px;
+    margin-bottom: 72px;
 
     color: getTextColor(light);
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 1.12px;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 36px;
+
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 1.12px;
+    }
+
+    @media screen and (min-width: 1158px) {
+        margin-bottom: 48px
+    }
 }

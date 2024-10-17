@@ -1,9 +1,8 @@
 .hero {
-    max-width: 1440px;
-    height: 600px;
+    max-width: 320px;
+    height: 432px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0;
 
     text-align: center;
 
@@ -11,10 +10,51 @@
     background-image: linear-gradient(to right,
             getBgColor(overlay),
             getBgColor(overlay)),
-        url("../imgs/bg-imgs/hero-banner.webp");
+        url("../imgs/bg-imgs/hero/bg-mob.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    @media screen and (min-resolution: 192dpi) and (max-width: 767px) {
+        background-image: linear-gradient(to right,
+                getBgColor(overlay),
+                getBgColor(overlay)),
+            url("../imgs/bg-imgs/hero/bg-mob@2.webp");
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+        height: 436px;
+
+        background-image: linear-gradient(to right,
+                getBgColor(overlay),
+                getBgColor(overlay)),
+            url("../imgs/bg-imgs/hero/bg-tab.webp");
+    }
+
+    @media screen and (min-resolution: 192dpi) and (min-width: 768px) {
+        background-image: linear-gradient(to right,
+                getBgColor(overlay),
+                getBgColor(overlay)),
+            url("../imgs/bg-imgs/hero/bg-tab@2.webp");
+    }
+
+    @media screen and (min-width: 1158px) {
+        max-width: 1440px;
+        height: 600px;
+
+        background-image: linear-gradient(to right,
+                getBgColor(overlay),
+                getBgColor(overlay)),
+            url("../imgs/bg-imgs/hero/bg-desc.webp");
+    }
+
+    @media screen and (min-resolution: 192dpi) and (min-width: 1158px) {
+        background-image: linear-gradient(to right,
+                getBgColor(overlay),
+                getBgColor(overlay)),
+            url("../imgs/bg-imgs/hero/bg-desc@2.webp");
+    }
 }
 
 .hero__content {
