@@ -12,6 +12,7 @@ function onCloseEsc(e) {
 
 function openModal() {
   backdropRef.classList.add("is-open");
+  document.body.style.overflow = "hidden";
   document.addEventListener("keydown", onCloseEsc);
   closeBtnRef.addEventListener("click", closeModal);
   backdropRef.addEventListener("click", clickBackdropCloseModal);
@@ -19,6 +20,7 @@ function openModal() {
 
 function closeModal() {
   backdropRef.classList.remove("is-open");
+  document.body.style.overflow = "visible";
   closeBtnRef.removeEventListener("click", openModal);
   backdropRef.removeEventListener("click", clickBackdropCloseModal);
   document.removeEventListener("keydown", onCloseEsc);

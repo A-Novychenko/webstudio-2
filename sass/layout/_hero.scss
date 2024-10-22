@@ -15,14 +15,14 @@
     background-position: center;
     background-size: cover;
 
-    @media screen and (min-resolution: 192dpi) and (max-width: 767px) {
+    @media screen and (min-resolution: 192dpi) and (max-width: 320px) {
         background-image: linear-gradient(to right,
                 getBgColor(overlay),
                 getBgColor(overlay)),
             url("../imgs/bg-imgs/hero/bg-mob@2.webp");
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 321px) {
         max-width: 768px;
         height: 436px;
 
@@ -32,14 +32,14 @@
             url("../imgs/bg-imgs/hero/bg-tab.webp");
     }
 
-    @media screen and (min-resolution: 192dpi) and (min-width: 768px) {
+    @media screen and (min-resolution: 192dpi) and (min-width: 321px) {
         background-image: linear-gradient(to right,
                 getBgColor(overlay),
                 getBgColor(overlay)),
             url("../imgs/bg-imgs/hero/bg-tab@2.webp");
     }
 
-    @media screen and (min-width: 1158px) {
+    @media screen and (min-width: 769px) {
         max-width: 1440px;
         height: 600px;
 
@@ -49,7 +49,7 @@
             url("../imgs/bg-imgs/hero/bg-desc.webp");
     }
 
-    @media screen and (min-resolution: 192dpi) and (min-width: 1158px) {
+    @media screen and (min-resolution: 192dpi) and (min-width: 769px) {
         background-image: linear-gradient(to right,
                 getBgColor(overlay),
                 getBgColor(overlay)),
