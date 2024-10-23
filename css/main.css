@@ -785,6 +785,12 @@ textarea {
 .page-header {
   border-bottom: 1px solid #e7e9fc;
 }
+@media screen and (max-width: 767px) {
+  .page-header {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}
 
 .page-header__wrap {
   display: -webkit-box;
@@ -799,8 +805,6 @@ textarea {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-top: 8px;
-    padding-bottom: 8px;
   }
 }
 
